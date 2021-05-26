@@ -1,0 +1,13 @@
+E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\bin\Debug\FoodDeliveryApp.exe.config
+E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\bin\Debug\FoodDeliveryApp.exe
+E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\bin\Debug\FoodDeliveryApp.pdb
+E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.csprojResolveAssemblyReference.cache
+E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.exe
+E:\Study Library\Application Design\Design Patterns\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.pdb
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\bin\Debug\FoodDeliveryApp.exe.config
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\bin\Debug\FoodDeliveryApp.exe
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\bin\Debug\FoodDeliveryApp.pdb
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.csprojAssemblyReference.cache
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.csproj.CoreCompileInputs.cache
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.exe
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.pdb
