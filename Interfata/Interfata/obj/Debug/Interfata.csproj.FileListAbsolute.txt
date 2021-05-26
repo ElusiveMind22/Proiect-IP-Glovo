@@ -11,3 +11,17 @@ D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Interfata\Interfata\ob
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Interfata\Interfata\obj\Debug\Interfata.LogIn.resources
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Interfata\Interfata\obj\Debug\Interfata.Magazine.resources
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Interfata\Interfata\obj\Debug\Interfata.Sign_up.resources
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\bin\Debug\Interfata.exe.config
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\bin\Debug\Interfata.exe
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\bin\Debug\Interfata.pdb
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.csprojAssemblyReference.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.LogIn.resources
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Magazine.resources
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Main.resources
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Properties.Resources.resources
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Sign_up.resources
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.csproj.GenerateResource.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.csproj.CoreCompileInputs.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.exe
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.pdb
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Form1.resources

@@ -40,46 +40,50 @@
             // signUpLabel
             // 
             this.signUpLabel.AutoSize = true;
-            this.signUpLabel.Font = new System.Drawing.Font("Open Sans ExtraBold", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signUpLabel.Location = new System.Drawing.Point(21, 121);
+            this.signUpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpLabel.Location = new System.Drawing.Point(28, 149);
+            this.signUpLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.signUpLabel.Name = "signUpLabel";
-            this.signUpLabel.Size = new System.Drawing.Size(575, 51);
+            this.signUpLabel.Size = new System.Drawing.Size(664, 54);
             this.signUpLabel.TabIndex = 19;
             this.signUpLabel.Text = "De unde vrei sa mananci azi?";
-            this.signUpLabel.Click += new System.EventHandler(this.signUpLabel_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(140, 186);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(187, 229);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(336, 22);
+            this.label1.Size = new System.Drawing.Size(410, 25);
             this.label1.TabIndex = 20;
             this.label1.Text = "**Alege un singur restaurant/supermarket";
             // 
             // veziMeniuButton
             // 
-            this.veziMeniuButton.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.veziMeniuButton.Location = new System.Drawing.Point(199, 494);
+            this.veziMeniuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.veziMeniuButton.Location = new System.Drawing.Point(265, 608);
+            this.veziMeniuButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.veziMeniuButton.Name = "veziMeniuButton";
-            this.veziMeniuButton.Size = new System.Drawing.Size(192, 39);
+            this.veziMeniuButton.Size = new System.Drawing.Size(256, 48);
             this.veziMeniuButton.TabIndex = 22;
             this.veziMeniuButton.Text = "Vezi Meniu";
             this.veziMeniuButton.UseVisualStyleBackColor = true;
+ 
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(627, 831);
+            this.pictureBox1.Size = new System.Drawing.Size(836, 1023);
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
             // magazineComboBox
             // 
-            this.magazineComboBox.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.magazineComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.magazineComboBox.FormattingEnabled = true;
             this.magazineComboBox.Items.AddRange(new object[] {
             "Splend\'eat",
@@ -89,23 +93,25 @@
             "Cartuf",
             "Mamma Mia",
             "Delicio"});
-            this.magazineComboBox.Location = new System.Drawing.Point(144, 349);
+            this.magazineComboBox.Location = new System.Drawing.Point(192, 430);
+            this.magazineComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.magazineComboBox.Name = "magazineComboBox";
-            this.magazineComboBox.Size = new System.Drawing.Size(318, 34);
+            this.magazineComboBox.Size = new System.Drawing.Size(423, 37);
             this.magazineComboBox.TabIndex = 24;
             this.magazineComboBox.Text = "Alege un magazin...";
             this.magazineComboBox.SelectedIndexChanged += new System.EventHandler(this.magazineComboBox_SelectedIndexChanged);
             // 
             // Magazine
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 829);
+            this.ClientSize = new System.Drawing.Size(832, 1020);
             this.Controls.Add(this.magazineComboBox);
             this.Controls.Add(this.veziMeniuButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.signUpLabel);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Magazine";
             this.Text = "Magazine";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

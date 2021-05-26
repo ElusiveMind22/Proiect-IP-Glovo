@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pizza and stuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pizza and stuff.Designer.cs">
+      <DependentUpon>Pizza and stuff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Magazine.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pizza and stuff.resx">
+      <DependentUpon>Pizza and stuff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
