@@ -46,6 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Localuri\FastFood\MagazineFastFood.cs" />
+    <Compile Include="Localuri\FastFood\McDonalds.cs" />
+    <Compile Include="Localuri\FastFood\Kfc.cs" />
+    <Compile Include="Localuri\Magazine.cs" />
+    <Compile Include="Localuri\MagazineFactories\FastFood.cs" />
+    <Compile Include="Localuri\MagazineFactories\Restaurant.cs" />
+    <Compile Include="Localuri\MagazineFactories\FastFoodType.cs" />
+    <Compile Include="Localuri\MagazineFactories\RestaurantType.cs" />
+    <Compile Include="Localuri\MagazineFactories\MagazinFactory.cs" />
+    <Compile Include="Localuri\Restaurante\MagazineRestaurante.cs" />
+    <Compile Include="Localuri\Restaurante\MammaMia.cs" />
+    <Compile Include="Localuri\Restaurante\Delicio.cs" />
+    <Compile Include="Localuri\Restaurante\SplendEat.cs" />
+    <Compile Include="Localuri\Restaurante\Cartuf.cs" />
+    <Compile Include="Localuri\Restaurante\Oxford.cs" />
+    <Compile Include="Localuri\Restaurante\LaCuib.cs" />
+    <Compile Include="Localuri\Restaurante\NoodlePack.cs" />
     <Compile Include="Pizza and stuff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
