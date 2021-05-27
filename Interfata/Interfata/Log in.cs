@@ -24,9 +24,11 @@ namespace Interfata
             SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From Autentificare Where Utilizator='" + usernameLogInTextBox.Text + "' and Parola='" + parolaLogInTextBox.Text + "'", conn);
             DataTable dta = new DataTable();
             sql.Fill(dta);
+            Console.WriteLine(dta);
+
             if (dta.Rows[0][0].ToString() == "1")
             {
-                this.Hide();
+                Hide();
                 Magazine form = new Magazine();
                 form.Show();
             }
@@ -38,6 +40,17 @@ namespace Interfata
 
         private void logInButton_Click(object sender, EventArgs e)
         {
+            if (rememberMeCheckBox.Checked)
+            {
+                Properties.Settings.Default.UserName = usernameLogInTextBox.Text;
+                Properties.Settings.Default.Password = parolaLogInTextBox.Text;
+                Properties.Settings.Default.Save();
+            }
+            if (!rememberMeCheckBox.Checked)
+            {
+                Properties.Settings.Default.UserName = "";
+                Properties.Settings.Default.Password = "";
+            }
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\Dayta.mdf;Integrated Security=True;Connect Timeout=30;");
             SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From Autentificare Where Utilizator='" + usernameLogInTextBox.Text + "' and Parola='" + parolaLogInTextBox.Text + "'", conn);
             DataTable dta = new DataTable();
@@ -63,6 +76,18 @@ namespace Interfata
         {
 
         }
+
+        private void rememberMeCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+
+                usernameLogInTextBox.Text = Properties.Settings.Default.UserName;
+                parolaLogInTextBox.Text = Properties.Settings.Default.Password;
+
+        }
     }
-    
 }

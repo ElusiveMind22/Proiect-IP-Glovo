@@ -33,7 +33,7 @@
             this.parolaLogInLabel = new System.Windows.Forms.Label();
             this.usernameLogInTextBox = new System.Windows.Forms.TextBox();
             this.parolaLogInTextBox = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.rememberMeCheckBox = new System.Windows.Forms.CheckBox();
             this.logInButton = new System.Windows.Forms.Button();
             this.parolaUitataButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -66,7 +66,7 @@
             // usernameLogInTextBox
             // 
             this.usernameLogInTextBox.Location = new System.Drawing.Point(433, 453);
-            this.usernameLogInTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameLogInTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.usernameLogInTextBox.Name = "usernameLogInTextBox";
             this.usernameLogInTextBox.Size = new System.Drawing.Size(277, 22);
             this.usernameLogInTextBox.TabIndex = 3;
@@ -75,29 +75,30 @@
             // parolaLogInTextBox
             // 
             this.parolaLogInTextBox.Location = new System.Drawing.Point(433, 522);
-            this.parolaLogInTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.parolaLogInTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.parolaLogInTextBox.Name = "parolaLogInTextBox";
             this.parolaLogInTextBox.Size = new System.Drawing.Size(277, 22);
             this.parolaLogInTextBox.TabIndex = 5;
             this.parolaLogInTextBox.TextChanged += new System.EventHandler(this.parolaLogInTextBox_TextChanged);
             // 
-            // checkBox1
+            // rememberMeCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(303, 782);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(172, 29);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "Tine-ma minte";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.rememberMeCheckBox.AutoSize = true;
+            this.rememberMeCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rememberMeCheckBox.Location = new System.Drawing.Point(303, 782);
+            this.rememberMeCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.rememberMeCheckBox.Name = "rememberMeCheckBox";
+            this.rememberMeCheckBox.Size = new System.Drawing.Size(172, 29);
+            this.rememberMeCheckBox.TabIndex = 6;
+            this.rememberMeCheckBox.Text = "Tine-ma minte";
+            this.rememberMeCheckBox.UseVisualStyleBackColor = true;
+            this.rememberMeCheckBox.CheckedChanged += new System.EventHandler(this.rememberMeCheckBox_CheckedChanged);
             // 
             // logInButton
             // 
             this.logInButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logInButton.Location = new System.Drawing.Point(263, 633);
-            this.logInButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logInButton.Margin = new System.Windows.Forms.Padding(4);
             this.logInButton.Name = "logInButton";
             this.logInButton.Size = new System.Drawing.Size(256, 48);
             this.logInButton.TabIndex = 7;
@@ -109,7 +110,7 @@
             // 
             this.parolaUitataButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.parolaUitataButton.Location = new System.Drawing.Point(263, 699);
-            this.parolaUitataButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.parolaUitataButton.Margin = new System.Windows.Forms.Padding(4);
             this.parolaUitataButton.Name = "parolaUitataButton";
             this.parolaUitataButton.Size = new System.Drawing.Size(256, 48);
             this.parolaUitataButton.TabIndex = 8;
@@ -120,7 +121,7 @@
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(829, 1026);
             this.pictureBox1.TabIndex = 9;
@@ -146,15 +147,16 @@
             this.Controls.Add(this.logInLabel);
             this.Controls.Add(this.parolaUitataButton);
             this.Controls.Add(this.logInButton);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.rememberMeCheckBox);
             this.Controls.Add(this.parolaLogInTextBox);
             this.Controls.Add(this.usernameLogInTextBox);
             this.Controls.Add(this.parolaLogInLabel);
             this.Controls.Add(this.usernameLogInLabel);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LogIn";
             this.Text = "Log In";
+            this.Load += new System.EventHandler(this.LogIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -167,7 +169,7 @@
         private System.Windows.Forms.Label parolaLogInLabel;
         private System.Windows.Forms.TextBox usernameLogInTextBox;
         private System.Windows.Forms.TextBox parolaLogInTextBox;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox rememberMeCheckBox;
         private System.Windows.Forms.Button logInButton;
         private System.Windows.Forms.Button parolaUitataButton;
         private System.Windows.Forms.PictureBox pictureBox1;

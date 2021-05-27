@@ -11,3 +11,7 @@ D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\obj\Debug\FoodDelivery
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.csproj.CoreCompileInputs.cache
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.exe
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.pdb
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.csprojAssemblyReference.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.csproj.CoreCompileInputs.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.exe
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\FoodDeliveryApp\obj\Debug\FoodDeliveryApp.pdb
