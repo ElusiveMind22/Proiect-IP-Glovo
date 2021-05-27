@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glovo", "Glovo.csproj", "{57DC7A93-F8BE-4B9F-AA87-F41D71B3F08A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57DC7A93-F8BE-4B9F-AA87-F41D71B3F08A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DC7A93-F8BE-4B9F-AA87-F41D71B3F08A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DC7A93-F8BE-4B9F-AA87-F41D71B3F08A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DC7A93-F8BE-4B9F-AA87-F41D71B3F08A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE7DAC21-2B63-43FF-AE64-F65F7B8D3653}
+	EndGlobalSection
+EndGlobal
