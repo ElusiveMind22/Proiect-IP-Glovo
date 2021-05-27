@@ -8,3 +8,13 @@ D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Glovo\obj\Debug\Glovo.
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Glovo\obj\Debug\Glovo.csproj.CoreCompileInputs.cache
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Glovo\obj\Debug\Glovo.exe
 D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Glovo\obj\Debug\Glovo.pdb
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\bin\Debug\Glovo.exe.config
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\bin\Debug\Glovo.exe
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\bin\Debug\Glovo.pdb
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\obj\Debug\Glovo.csprojAssemblyReference.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\obj\Debug\Glovo.Properties.Resources.resources
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\obj\Debug\Glovo.csproj.GenerateResource.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\obj\Debug\Glovo.csproj.CoreCompileInputs.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\obj\Debug\Glovo.exe
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\obj\Debug\Glovo.pdb
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Glovo\obj\Debug\Glovo.MenuForm1.resources
