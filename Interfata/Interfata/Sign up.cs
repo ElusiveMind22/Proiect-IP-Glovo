@@ -16,6 +16,8 @@ namespace Interfata
         public Sign_up()
         {
             InitializeComponent();
+            parolaSignUpTextBox.PasswordChar = '•';
+            parolaConfirmSignUpTextBox.PasswordChar = '•';
         }
 
         private void Sign_up_Load(object sender, EventArgs e)
@@ -32,18 +34,30 @@ namespace Interfata
 
         private void signUpButton_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\data.mdf;Integrated Security=True;Connect Timeout=30;");
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;");
             conn.Open();                            
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             //Daca exista deja utilizator cu numele asta sau cu mailul asta e nono.
 
-            SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From [Table] Where Username='" + usernameSignUpTextBox.Text + "' or email='" + emailSignUpTextBox.Text + "'", conn);
+            SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From [Table] Where Username='" + usernameSignUpTextBox.Text + "' or mail='" + emailSignUpTextBox.Text + "'", conn);
             DataTable dta = new DataTable();
             sql.Fill(dta);
-            if(!gdprCheckBox.Checked)
+            if (usernameSignUpTextBox.Text == "" || parolaSignUpTextBox.Text == "" || parolaConfirmSignUpTextBox.Text == "" || emailSignUpTextBox.Text=="")
             {
-                MessageBox.Show("You must agree to GDPR first!");
+                MessageBox.Show("Campurile Utilizator, Email sau Parola sunt goale", "Inregistrare esuata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else
+            if (!gdprCheckBox.Checked)
+            {
+                MessageBox.Show("Trebuie sa fiti de acord cu GDPR!");
+            }
+            else
+            if(parolaConfirmSignUpTextBox.Text!=parolaSignUpTextBox.Text)
+            {
+                MessageBox.Show("Parola nu corespunde!", "Inregistrare esuata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             else
             if (dta.Rows[0][0].ToString() == "0")
@@ -52,6 +66,12 @@ namespace Interfata
                 cmd.Parameters.AddWithValue("@username", usernameSignUpTextBox.Text);
                 cmd.Parameters.AddWithValue("@password", parolaSignUpTextBox.Text);
                 cmd.Parameters.AddWithValue("@mail", emailSignUpTextBox.Text);
+
+                usernameSignUpTextBox.Text = "";
+                parolaSignUpTextBox.Text = "";
+                parolaConfirmSignUpTextBox.Text = "";
+                emailSignUpTextBox.Text = "";
+
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("V-ați înregistrat cu succes!");
@@ -60,6 +80,11 @@ namespace Interfata
             else
             {
                 MessageBox.Show("Email or username has already been registred!");
+                usernameSignUpTextBox.Text = "";
+                parolaSignUpTextBox.Text = "";
+                parolaConfirmSignUpTextBox.Text = "";
+                emailSignUpTextBox.Text = "";
+                parolaSignUpTextBox.Focus();
             }
 
 
@@ -84,6 +109,40 @@ namespace Interfata
         private void gdprCheckBox_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox_afiseaza_parola_CheckedChanged(object sender, EventArgs e)
+        {
+            {
+                if (checkBox_afiseaza_parola.Checked)
+                {
+                    parolaSignUpTextBox.PasswordChar = '\0';
+                    parolaConfirmSignUpTextBox.PasswordChar = '\0';
+                }
+                else
+                {
+                    parolaSignUpTextBox.PasswordChar = '•';
+                    parolaConfirmSignUpTextBox.PasswordChar = '•';
+                }
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signUpLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_Stergere_Click(object sender, EventArgs e)
+        {
+            usernameSignUpTextBox.Text = "";
+            parolaSignUpTextBox.Text = "";
+            parolaConfirmSignUpTextBox.Text = "";
+            emailSignUpTextBox.Focus();
         }
     }
 }

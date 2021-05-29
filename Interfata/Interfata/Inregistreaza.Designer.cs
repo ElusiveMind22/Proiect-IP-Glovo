@@ -120,6 +120,7 @@ namespace ProiectIP
             this.textBox_utilizator.Name = "textBox_utilizator";
             this.textBox_utilizator.Size = new System.Drawing.Size(138, 22);
             this.textBox_utilizator.TabIndex = 14;
+            this.textBox_utilizator.TextChanged += new System.EventHandler(this.textBox_utilizator_TextChanged);
             // 
             // textBox_parola
             // 
@@ -158,6 +159,7 @@ namespace ProiectIP
             this.textBox_confirma_parola.PasswordChar = '*';
             this.textBox_confirma_parola.Size = new System.Drawing.Size(138, 22);
             this.textBox_confirma_parola.TabIndex = 22;
+            this.textBox_confirma_parola.TextChanged += new System.EventHandler(this.textBox_confirma_parola_TextChanged);
             // 
             // label3
             // 

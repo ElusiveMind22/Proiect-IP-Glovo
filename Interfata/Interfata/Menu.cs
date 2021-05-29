@@ -323,5 +323,12 @@ namespace Interfata
         {
 
         }
+
+        private void PlaseazaComandaButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Bon_de_ordin form = new Bon_de_ordin(_meniu,_preturi, totalTextBox.Text);
+            form.Show();
+        }
     }
 }

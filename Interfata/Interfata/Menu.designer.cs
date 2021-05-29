@@ -57,12 +57,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.RestaurantButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.PlaseazaComandaButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(493, 872);
+            this.exitButton.Location = new System.Drawing.Point(503, 854);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(149, 26);
@@ -73,7 +74,7 @@
             // 
             // resetButton
             // 
-            this.resetButton.Location = new System.Drawing.Point(493, 792);
+            this.resetButton.Location = new System.Drawing.Point(503, 774);
             this.resetButton.Margin = new System.Windows.Forms.Padding(4);
             this.resetButton.Name = "resetButton";
             this.resetButton.Size = new System.Drawing.Size(149, 28);
@@ -276,7 +277,7 @@
             // 
             // totalButton
             // 
-            this.totalButton.Location = new System.Drawing.Point(493, 738);
+            this.totalButton.Location = new System.Drawing.Point(503, 667);
             this.totalButton.Margin = new System.Windows.Forms.Padding(4);
             this.totalButton.Name = "totalButton";
             this.totalButton.Size = new System.Drawing.Size(149, 32);
@@ -301,7 +302,7 @@
             // 
             this.totalLabel.AutoSize = true;
             this.totalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalLabel.Location = new System.Drawing.Point(497, 652);
+            this.totalLabel.Location = new System.Drawing.Point(507, 581);
             this.totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(87, 29);
@@ -310,7 +311,7 @@
             // 
             // totalTextBox
             // 
-            this.totalTextBox.Location = new System.Drawing.Point(493, 694);
+            this.totalTextBox.Location = new System.Drawing.Point(503, 623);
             this.totalTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.totalTextBox.Name = "totalTextBox";
             this.totalTextBox.Size = new System.Drawing.Size(149, 22);
@@ -339,7 +340,7 @@
             // 
             // RestaurantButton
             // 
-            this.RestaurantButton.Location = new System.Drawing.Point(493, 828);
+            this.RestaurantButton.Location = new System.Drawing.Point(503, 810);
             this.RestaurantButton.Margin = new System.Windows.Forms.Padding(4);
             this.RestaurantButton.Name = "RestaurantButton";
             this.RestaurantButton.Size = new System.Drawing.Size(149, 36);
@@ -358,11 +359,23 @@
             this.label4.Text = "label4";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // PlaseazaComandaButton
+            // 
+            this.PlaseazaComandaButton.Location = new System.Drawing.Point(503, 707);
+            this.PlaseazaComandaButton.Margin = new System.Windows.Forms.Padding(4);
+            this.PlaseazaComandaButton.Name = "PlaseazaComandaButton";
+            this.PlaseazaComandaButton.Size = new System.Drawing.Size(149, 32);
+            this.PlaseazaComandaButton.TabIndex = 29;
+            this.PlaseazaComandaButton.Text = "PlaseazaComanda";
+            this.PlaseazaComandaButton.UseVisualStyleBackColor = true;
+            this.PlaseazaComandaButton.Click += new System.EventHandler(this.PlaseazaComandaButton_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 1055);
+            this.Controls.Add(this.PlaseazaComandaButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.RestaurantButton);
             this.Controls.Add(this.label3);
@@ -430,6 +443,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button RestaurantButton;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button PlaseazaComandaButton;
     }
 }
 

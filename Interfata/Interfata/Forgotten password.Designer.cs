@@ -43,6 +43,7 @@ namespace Interfata
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(100, 22);
             this.EmailTextBox.TabIndex = 0;
+            this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
             // 
             // HelpLabel
             // 

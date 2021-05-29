@@ -41,6 +41,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.signUpLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
+            this.checkBox_afiseaza_parola = new System.Windows.Forms.CheckBox();
+            this.parolaConfirmSignUpTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button_Stergere = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +75,7 @@
             // 
             // parolaSignUpTextBox
             // 
-            this.parolaSignUpTextBox.Location = new System.Drawing.Point(420, 524);
+            this.parolaSignUpTextBox.Location = new System.Drawing.Point(420, 504);
             this.parolaSignUpTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.parolaSignUpTextBox.Name = "parolaSignUpTextBox";
             this.parolaSignUpTextBox.Size = new System.Drawing.Size(277, 22);
@@ -100,7 +104,7 @@
             // 
             this.parolaSignUpLabel.AutoSize = true;
             this.parolaSignUpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.parolaSignUpLabel.Location = new System.Drawing.Point(187, 519);
+            this.parolaSignUpLabel.Location = new System.Drawing.Point(188, 497);
             this.parolaSignUpLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.parolaSignUpLabel.Name = "parolaSignUpLabel";
             this.parolaSignUpLabel.Size = new System.Drawing.Size(96, 29);
@@ -161,6 +165,7 @@
             this.signUpLabel.Size = new System.Drawing.Size(471, 135);
             this.signUpLabel.TabIndex = 18;
             this.signUpLabel.Text = "Sign up";
+            this.signUpLabel.Click += new System.EventHandler(this.signUpLabel_Click);
             // 
             // BackButton
             // 
@@ -174,11 +179,60 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // checkBox_afiseaza_parola
+            // 
+            this.checkBox_afiseaza_parola.AutoSize = true;
+            this.checkBox_afiseaza_parola.Font = new System.Drawing.Font("Nirmala UI", 7.75F, System.Drawing.FontStyle.Bold);
+            this.checkBox_afiseaza_parola.Location = new System.Drawing.Point(420, 563);
+            this.checkBox_afiseaza_parola.Name = "checkBox_afiseaza_parola";
+            this.checkBox_afiseaza_parola.Size = new System.Drawing.Size(117, 21);
+            this.checkBox_afiseaza_parola.TabIndex = 21;
+            this.checkBox_afiseaza_parola.Text = "Afiseza parola";
+            this.checkBox_afiseaza_parola.UseVisualStyleBackColor = true;
+            this.checkBox_afiseaza_parola.CheckedChanged += new System.EventHandler(this.checkBox_afiseaza_parola_CheckedChanged);
+            // 
+            // parolaConfirmSignUpTextBox
+            // 
+            this.parolaConfirmSignUpTextBox.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.parolaConfirmSignUpTextBox.Location = new System.Drawing.Point(420, 535);
+            this.parolaConfirmSignUpTextBox.Name = "parolaConfirmSignUpTextBox";
+            this.parolaConfirmSignUpTextBox.PasswordChar = '*';
+            this.parolaConfirmSignUpTextBox.Size = new System.Drawing.Size(277, 22);
+            this.parolaConfirmSignUpTextBox.TabIndex = 23;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(187, 535);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 29);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Confirma Parola:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button_Stergere
+            // 
+            this.button_Stergere.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button_Stergere.Font = new System.Drawing.Font("Nirmala UI", 8.75F, System.Drawing.FontStyle.Bold);
+            this.button_Stergere.Location = new System.Drawing.Point(552, 588);
+            this.button_Stergere.Name = "button_Stergere";
+            this.button_Stergere.Size = new System.Drawing.Size(100, 47);
+            this.button_Stergere.TabIndex = 25;
+            this.button_Stergere.Text = "Stergere";
+            this.button_Stergere.UseVisualStyleBackColor = false;
+            this.button_Stergere.Click += new System.EventHandler(this.button_Stergere_Click);
+            // 
             // Sign_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 1020);
+            this.Controls.Add(this.button_Stergere);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.parolaConfirmSignUpTextBox);
+            this.Controls.Add(this.checkBox_afiseaza_parola);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.signUpLabel);
             this.Controls.Add(this.newsletterCheckBox);
@@ -215,5 +269,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label signUpLabel;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.CheckBox checkBox_afiseaza_parola;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox parolaConfirmSignUpTextBox;
+        private System.Windows.Forms.Button button_Stergere;
     }
 }

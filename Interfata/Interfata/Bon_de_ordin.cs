@@ -20,12 +20,12 @@ using System.Drawing.Printing;
 
 
 
-namespace ProiectIP
+namespace Interfata
 {
     public partial class Bon_de_ordin : Form
     {
         private readonly Random _random = new Random();
-        public Bon_de_ordin()
+        public Bon_de_ordin(string[] meniuri, double[] preturi, string total)
         {
             InitializeComponent();
             dateTimePicker1.MinDate = dateTimePicker2.MinDate = dateTimePicker3.MinDate = dateTimePicker4.MinDate=DateTime.Now;

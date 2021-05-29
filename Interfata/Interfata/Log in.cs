@@ -24,11 +24,11 @@ namespace Interfata
             try
             {
 
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\data.mdf;Integrated Security=True;Connect Timeout=30;");
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;");
                 SqlDataAdapter sql = new SqlDataAdapter();
                 SqlCommand cmd = new SqlCommand();
                 conn.Open();
-                string login = "SELECT * FROM Autentificare WHERE USERNAME='" + usernameLogInTextBox.Text + "' and PAROLA='" + parolaLogInTextBox.Text + "'";
+                string login = "SELECT * FROM [Table] WHERE USERNAME='" + usernameLogInTextBox.Text + "' and PASSWORD='" + parolaLogInTextBox.Text + "'";
                 cmd = new SqlCommand(login, conn);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read() == true)
@@ -66,11 +66,11 @@ namespace Interfata
             try
             {
 
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\data.mdf;Integrated Security=True;Connect Timeout=30;");
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;");
                 SqlDataAdapter sql = new SqlDataAdapter();
                 SqlCommand cmd = new SqlCommand();
                 conn.Open();
-                string login = "SELECT * FROM Autentificare WHERE USERNAME='" + usernameLogInTextBox.Text + "' and PAROLA='" + parolaLogInTextBox.Text + "'";
+                string login = "SELECT * FROM [Table] WHERE USERNAME='" + usernameLogInTextBox.Text + "' and PASSWORD='" + parolaLogInTextBox.Text + "'";
                 cmd = new SqlCommand(login, conn);
                 SqlDataReader dr = cmd.ExecuteReader();
                 if (dr.Read() == true)

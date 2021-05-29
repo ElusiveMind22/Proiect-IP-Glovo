@@ -1,5 +1,5 @@
 ﻿
-namespace ProiectIP
+namespace Interfata
 {
     partial class Bon_de_ordin
     {

@@ -92,5 +92,15 @@ namespace ProiectIP
         {
             Environment.Exit(0);
         }
+
+        private void textBox_utilizator_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_confirma_parola_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
