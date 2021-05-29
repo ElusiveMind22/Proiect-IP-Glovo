@@ -96,6 +96,7 @@ namespace Interfata
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker3.TabIndex = 6;
+            this.dateTimePicker3.ValueChanged += new System.EventHandler(this.dateTimePicker3_ValueChanged);
             // 
             // dateTimePicker4
             // 
@@ -111,6 +112,7 @@ namespace Interfata
             this.textBox_nrcomanda.Name = "textBox_nrcomanda";
             this.textBox_nrcomanda.Size = new System.Drawing.Size(100, 22);
             this.textBox_nrcomanda.TabIndex = 2;
+            this.textBox_nrcomanda.TextChanged += new System.EventHandler(this.textBox_nrcomanda_TextChanged);
             // 
             // label3
             // 

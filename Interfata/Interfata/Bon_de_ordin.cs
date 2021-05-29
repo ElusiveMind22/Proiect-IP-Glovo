@@ -34,6 +34,9 @@ namespace Interfata
             dateTimePicker2.Value = dateTimePicker2.Value.AddMinutes(30);
             dateTimePicker3.Format = DateTimePickerFormat.Custom;
             dateTimePicker4.Format = DateTimePickerFormat.Custom;
+            dateTimePicker3.Enabled = false;
+            dateTimePicker1.Enabled = false;
+            textBox_nrcomanda.Enabled = false;
         }
        
         private void Bon_de_ordin_Load(object sender, EventArgs e)
@@ -96,7 +99,19 @@ namespace Interfata
         private void button_genereaza_comanda_Click(object sender, EventArgs e)
         {
            
-            this.Hide();
+            Hide();
+            LogIn form = new LogIn();
+            form.Show();
+        }
+
+        private void dateTimePicker3_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox_nrcomanda_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

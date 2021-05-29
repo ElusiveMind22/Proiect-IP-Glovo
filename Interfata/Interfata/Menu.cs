@@ -35,28 +35,21 @@ namespace Interfata
 
             
             
-            label3.Text = _numeLocal;
-            label4.Text = _tipDeLocal;
+            TitluLabel.Text = _numeLocal;
+            TipLabel.Text = _tipDeLocal;
 
 
-            ciuperciCheckBox.Text = _meniu[0];
-            pasteCheckBox.Text = _meniu[1];
-            sarmaleCheckBox.Text = _meniu[2];
-            mamaligaCheckBox.Text = _meniu[3];
-            gulasCheckBox.Text = _meniu[4];
-            ciorbaCheckBox.Text = _meniu[5];
-            chifteleVegCheckBox.Text = _meniu[6];
-            cartofiPaiCheckBox.Text = _meniu[7];
+            menu0CheckBox.Text = _meniu[0];
+            menu1CheckBox.Text = _meniu[1];
+            menu2CheckBox.Text = _meniu[2];
+            menu3CheckBox.Text = _meniu[3];
+            menu4CheckBox.Text = _meniu[4];
+            menu5CheckBox.Text = _meniu[5];
+            menu6CheckBox.Text = _meniu[6];
+            menu7CheckBox.Text = _meniu[7];
 
 
-            ciuperciTextBox.Text = "0"; 
-            pasteTextBox.Text = "0";
-            sarmaleTextBox.Text = "0";
-            mamaligaTextBox.Text = "0";
-            gulasTextBox.Text = "0";
-            ciorbaTextBox.Text = "0";
-            chifteleVegTextBox.Text = "0";
-            cartofiPaiTextBox.Text = "0";
+
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -113,13 +106,14 @@ namespace Interfata
 
         private void resetButton_Click(object sender, EventArgs e)
         {
+            preturiRichTextBox.Text = "";
             resetTextBoxes();
             resetCheckBoxes();
         }
 
         private void cartofiPaiCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (cartofiPaiCheckBox.Checked == true)
+            if (menu4CheckBox.Checked == true)
             {
                 cartofiPaiTextBox.Enabled = true;
                 cartofiPaiTextBox.Text = "";
@@ -136,7 +130,7 @@ namespace Interfata
 
         private void chifteleVegCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (chifteleVegCheckBox.Checked == true)
+            if (menu5CheckBox.Checked == true)
             {
                 chifteleVegTextBox.Enabled = true;
                 chifteleVegTextBox.Text = "";
@@ -161,7 +155,7 @@ namespace Interfata
 
         private void pasteCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (pasteCheckBox.Checked == true)
+            if (menu0CheckBox.Checked == true)
             {
                 pasteTextBox.Enabled = true;
                 pasteTextBox.Text = "";
@@ -176,7 +170,7 @@ namespace Interfata
 
         private void ciuperciCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (ciuperciCheckBox.Checked == true)
+            if (menu1CheckBox.Checked == true)
             {
                 ciuperciTextBox.Enabled = true;
                 ciuperciTextBox.Text = "";
@@ -191,7 +185,7 @@ namespace Interfata
 
         private void mamaligaCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (mamaligaCheckBox.Checked == true)
+            if (menu2CheckBox.Checked == true)
             {
                 mamaligaTextBox.Enabled = true;
                 mamaligaTextBox.Text = "";
@@ -206,7 +200,7 @@ namespace Interfata
 
         private void sarmaleCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (sarmaleCheckBox.Checked == true)
+            if (menu3CheckBox.Checked == true)
             {
                 sarmaleTextBox.Enabled = true;
                 sarmaleTextBox.Text = "";
@@ -221,7 +215,7 @@ namespace Interfata
 
         private void ciorbaCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (ciorbaCheckBox.Checked == true)
+            if (menu6CheckBox.Checked == true)
             {
                 ciorbaTextBox.Enabled = true;
                 ciorbaTextBox.Text = "";
@@ -237,7 +231,7 @@ namespace Interfata
 
         private void gulasCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (gulasCheckBox.Checked)
+            if (menu7CheckBox.Checked)
             {
                 gulasTextBox.Enabled = true;
                 gulasTextBox.Text = "";
@@ -255,14 +249,14 @@ namespace Interfata
         { try
             {
                 double[] pretProdus = new double[8];
-                pretProdus[0] = Convert.ToDouble(cartofiPaiTextBox.Text) * _preturi[0];
-                pretProdus[1] = Convert.ToDouble(pasteTextBox.Text) * _preturi[1];
-                pretProdus[2] = Convert.ToDouble(ciuperciTextBox.Text) * _preturi[2];
-                pretProdus[3] = Convert.ToDouble(sarmaleTextBox.Text) * _preturi[3];
-                pretProdus[4] = Convert.ToDouble(mamaligaTextBox.Text) * _preturi[4];
-                pretProdus[5] = Convert.ToDouble(gulasTextBox.Text) * _preturi[5];
-                pretProdus[6] = Convert.ToDouble(ciorbaTextBox.Text) * _preturi[6];
-                pretProdus[7] = Convert.ToDouble(chifteleVegTextBox.Text) * _preturi[7];
+                pretProdus[0] = Convert.ToDouble(menu0CheckBox.Text) * _preturi[0];
+                pretProdus[1] = Convert.ToDouble(menu1CheckBox.Text) * _preturi[1];
+                pretProdus[2] = Convert.ToDouble(menu2CheckBox.Text) * _preturi[2];
+                pretProdus[3] = Convert.ToDouble(menu3CheckBox.Text) * _preturi[3];
+                pretProdus[4] = Convert.ToDouble(menu4CheckBox.Text) * _preturi[4];
+                pretProdus[5] = Convert.ToDouble(menu5CheckBox.Text) * _preturi[5];
+                pretProdus[6] = Convert.ToDouble(menu6CheckBox.Text) * _preturi[6];
+                pretProdus[7] = Convert.ToDouble(menu7CheckBox.Text) * _preturi[7];
 
                 double total = 0.0;
                 for (int i = 0; i < 8; ++i)
@@ -274,7 +268,8 @@ namespace Interfata
             }
             catch(FormatException ex)
             {
-                
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 totalTextBox.Text = "ERR";
             }
             
@@ -291,7 +286,7 @@ namespace Interfata
                 _meniu[2]+"\t\t"+_preturi[2].ToString()+" lei",
                 _meniu[3]+"\t\t"+_preturi[3].ToString()+" lei",
                 _meniu[4]+"\t\t"+_preturi[4].ToString()+" lei",
-                _meniu[5]+"\t\t"+ _preturi[5].ToString()+" lei",
+                _meniu[5]+"\t\t"+_preturi[5].ToString()+" lei",
                 _meniu[6]+"\t\t"+_preturi[6].ToString()+" lei",
                 _meniu[7]+"\t\t"+_preturi[7].ToString()+" lei"
             };
@@ -326,9 +321,25 @@ namespace Interfata
 
         private void PlaseazaComandaButton_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (totalTextBox.Text == "ERR" || totalTextBox.Text == ""||totalTextBox.Text=="0")
+                    throw new Exception();
+         
             Hide();
             Bon_de_ordin form = new Bon_de_ordin(_meniu,_preturi, totalTextBox.Text);
             form.Show();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Nu poti da comanda fara sa alegi ce sa mananci", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error) ;
+
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

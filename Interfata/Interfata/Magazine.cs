@@ -140,7 +140,7 @@ namespace Interfata
             {
                 Console.WriteLine("{0} Exception caught.", ex);
                 MessageBox.Show("Nu ai selectat Restaurant!!");
-                Application.Exit();
+              
             }
         }
 

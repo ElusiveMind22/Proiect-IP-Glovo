@@ -75,6 +75,9 @@ namespace Interfata
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("V-ați înregistrat cu succes!");
+                    Hide();
+                    LogIn form = new LogIn();
+                    form.Show();
                 }
             }
             else
