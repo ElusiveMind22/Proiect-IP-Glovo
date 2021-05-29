@@ -16,25 +16,37 @@ namespace Interfata
         public LogIn()
         {
             InitializeComponent();
+            parolaLogInTextBox.PasswordChar = '•';
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\Dayta.mdf;Integrated Security=True;Connect Timeout=30;");
-            SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From Autentificare Where Utilizator='" + usernameLogInTextBox.Text + "' and Parola='" + parolaLogInTextBox.Text + "'", conn);
-            DataTable dta = new DataTable();
-            sql.Fill(dta);
-            Console.WriteLine(dta);
+            try
+            {
 
-            if (dta.Rows[0][0].ToString() == "1")
-            {
-                Hide();
-                Magazine form = new Magazine();
-                form.Show();
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\data.mdf;Integrated Security=True;Connect Timeout=30;");
+                SqlDataAdapter sql = new SqlDataAdapter();
+                SqlCommand cmd = new SqlCommand();
+                conn.Open();
+                string login = "SELECT * FROM Autentificare WHERE USERNAME='" + usernameLogInTextBox.Text + "' and PAROLA='" + parolaLogInTextBox.Text + "'";
+                cmd = new SqlCommand(login, conn);
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read() == true)
+                {
+                    new Magazine().Show();
+                    Hide();
+                }     
+                else
+                {
+                    MessageBox.Show("Utilizator sau parola date invalide", "Autentificare esuata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    usernameLogInTextBox.Text = "";
+                    parolaLogInTextBox.Text = "";
+                    usernameLogInTextBox.Focus();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Utilizator sau parola date invalide");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -51,19 +63,32 @@ namespace Interfata
                 Properties.Settings.Default.UserName = "";
                 Properties.Settings.Default.Password = "";
             }
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\Dayta.mdf;Integrated Security=True;Connect Timeout=30;");
-            SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From Autentificare Where Utilizator='" + usernameLogInTextBox.Text + "' and Parola='" + parolaLogInTextBox.Text + "'", conn);
-            DataTable dta = new DataTable();
-            sql.Fill(dta);
-            if (dta.Rows[0][0].ToString() == "1")
+            try
             {
-                this.Hide();
-                Magazine form = new Magazine();
-                form.Show();
+
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\data.mdf;Integrated Security=True;Connect Timeout=30;");
+                SqlDataAdapter sql = new SqlDataAdapter();
+                SqlCommand cmd = new SqlCommand();
+                conn.Open();
+                string login = "SELECT * FROM Autentificare WHERE USERNAME='" + usernameLogInTextBox.Text + "' and PAROLA='" + parolaLogInTextBox.Text + "'";
+                cmd = new SqlCommand(login, conn);
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read() == true)
+                {
+                    new Magazine().Show();
+                    Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Utilizator sau parola date invalide", "Autentificare esuata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    usernameLogInTextBox.Text = "";
+                    parolaLogInTextBox.Text = "";
+                    usernameLogInTextBox.Focus();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Utilizator sau parola date invalide");
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -88,6 +113,41 @@ namespace Interfata
                 usernameLogInTextBox.Text = Properties.Settings.Default.UserName;
                 parolaLogInTextBox.Text = Properties.Settings.Default.Password;
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Main form = new Main();
+            form.Show();
+        }
+
+        private void parolaUitataButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Forgotten_password form = new Forgotten_password();
+            form.Show();
+        }
+
+        private void checkBox_afiseaza_parola_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_afiseaza_parola.Checked)
+            {
+                parolaLogInTextBox.PasswordChar = '\0';
+
+            }
+            else
+            {
+                parolaLogInTextBox.PasswordChar = '•';
+
+            }
+        }
+
+        private void ResetButton_Click(object sender, EventArgs e)
+        {
+            usernameLogInTextBox.Text = "";
+            parolaLogInTextBox.Text = "";
+            usernameLogInTextBox.Focus();
         }
     }
 }

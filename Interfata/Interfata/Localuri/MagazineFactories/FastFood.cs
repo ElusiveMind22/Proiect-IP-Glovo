@@ -8,20 +8,24 @@ using static Interfata.Localuri.MagazineFactories.FastFoodType;
 
 namespace Interfata.Localuri.MagazineFactories
 {
-    public class FastFood : IMagazinFactory
+    public class FastFood : ILocalFactory
     {
-        public Magazine MakeFastFood(FastFoodType type)
+        public Locale MakeFastFood(FastFoodType type)
         {
             switch (type)
             {
 
-                case MCDONALDS: return new McDonalds();
-                case KFC: return new Kfc();
-                default: return null;
+                case MCDONALDS: 
+                    return new McDonalds();
+                case KFC:
+                    Console.WriteLine("JARATICULE!");
+                    return new Kfc();
+                default: 
+                    return null;
 
             }
         }
-        public Magazine MakeRestaurant(RestaurantType type)
+        public Locale MakeRestaurant(RestaurantType type)
         {
             return null;
         }

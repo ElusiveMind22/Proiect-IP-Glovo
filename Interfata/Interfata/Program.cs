@@ -16,7 +16,7 @@ namespace Interfata
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Magazine());
+            Application.Run(new Main());
         }
     }
 }

@@ -27,5 +27,34 @@ namespace Interfata
         private void welcomeLabel_Click(object sender, EventArgs e)
         {
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ExitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void HelpButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogInButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            LogIn form = new LogIn();
+            form.Show();
+        }
+
+        private void SignUpButton_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Sign_up form = new Sign_up();
+            form.Show();
+        }
     }
 }

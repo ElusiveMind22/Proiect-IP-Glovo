@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Interfata.Localuri.FastFood
 {
-    public class MagazineFastFood:Magazine
+    public class MagazineFastFood:Locale
     {
+        public MagazineFastFood() : base()
+        {
+            _tipDeLocal = "FastFood";
+        }
     }
 }

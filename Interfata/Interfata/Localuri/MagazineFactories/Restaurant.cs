@@ -7,28 +7,37 @@ using static Interfata.Localuri.MagazineFactories.RestaurantType;
 using Interfata.Localuri.Restaurante;
 namespace Interfata.Localuri.MagazineFactories
 {
-    public class Restaurant:IMagazinFactory
+    public class Restaurant:ILocalFactory
     {
  
 
-        public Magazine MakeRestaurant ( RestaurantType type)
+        public Locale MakeRestaurant ( RestaurantType type)
         {
             switch (type)
             {
 
-                case SPLENDEAT: return new SplendEat();
-                case NOODLEPACK: return new NoodlePack();
-                case LACUIB: return new LaCuib();
-                case OXFORD: return new Oxford();
-                case CARTUF: return new Cartuf();
-                case MAMMAMIA: return new MammaMia();
-                case DELICIO: return new Delicio();
-                default: return null;
+                case SPLENDEAT:
+                    return new SplendEat();
+                case NOODLEPACK: 
+                    return new NoodlePack();
+                case LACUIB: 
+                    return new LaCuib();
+                case OXFORD: 
+                    return new Oxford();
+                case CARTUF: 
+                    return new Cartuf();
+                case MAMMAMIA:
+                    return new MammaMia();
+                case DELICIO: 
+                    return new Delicio();
+                default: 
+                    return null;
                    
             }
         }
-        public Magazine MakeFastFood(FastFoodType type)
+        public Locale MakeFastFood(FastFoodType type)
         {
+            Console.WriteLine("NU POTI IMPLEMENTA UN FASTFOOD CU UN MAKERESTAURANT!");
             return null;
         }
     }
