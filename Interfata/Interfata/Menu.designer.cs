@@ -31,24 +31,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.exitButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
-            this.pasteTextBox = new System.Windows.Forms.TextBox();
-            this.ciuperciTextBox = new System.Windows.Forms.TextBox();
+            this.menu0TextBox = new System.Windows.Forms.TextBox();
+            this.menu1TextBox = new System.Windows.Forms.TextBox();
             this.menu0CheckBox = new System.Windows.Forms.CheckBox();
             this.menu1CheckBox = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Mark = new System.Windows.Forms.Label();
             this.menu5CheckBox = new System.Windows.Forms.CheckBox();
             this.menu4CheckBox = new System.Windows.Forms.CheckBox();
-            this.chifteleVegTextBox = new System.Windows.Forms.TextBox();
-            this.cartofiPaiTextBox = new System.Windows.Forms.TextBox();
+            this.menu5TextBox = new System.Windows.Forms.TextBox();
+            this.menu4TextBox = new System.Windows.Forms.TextBox();
             this.menu3CheckBox = new System.Windows.Forms.CheckBox();
             this.menu2CheckBox = new System.Windows.Forms.CheckBox();
-            this.sarmaleTextBox = new System.Windows.Forms.TextBox();
-            this.mamaligaTextBox = new System.Windows.Forms.TextBox();
+            this.menu3TextBox = new System.Windows.Forms.TextBox();
+            this.menu2TextBox = new System.Windows.Forms.TextBox();
             this.menu7CheckBox = new System.Windows.Forms.CheckBox();
             this.menu6CheckBox = new System.Windows.Forms.CheckBox();
-            this.gulasTextBox = new System.Windows.Forms.TextBox();
-            this.ciorbaTextBox = new System.Windows.Forms.TextBox();
+            this.menu7TextBox = new System.Windows.Forms.TextBox();
+            this.menu6TextBox = new System.Windows.Forms.TextBox();
             this.totalButton = new System.Windows.Forms.Button();
             this.preturiRichTextBox = new System.Windows.Forms.RichTextBox();
             this.totalLabel = new System.Windows.Forms.Label();
@@ -83,21 +83,22 @@
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
-            // pasteTextBox
+            // menu0TextBox
             // 
-            this.pasteTextBox.Location = new System.Drawing.Point(267, 325);
-            this.pasteTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.pasteTextBox.Name = "pasteTextBox";
-            this.pasteTextBox.Size = new System.Drawing.Size(60, 22);
-            this.pasteTextBox.TabIndex = 2;
+            this.menu0TextBox.Location = new System.Drawing.Point(267, 325);
+            this.menu0TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.menu0TextBox.Name = "menu0TextBox";
+            this.menu0TextBox.Size = new System.Drawing.Size(60, 22);
+            this.menu0TextBox.TabIndex = 2;
             // 
-            // ciuperciTextBox
+            // menu1TextBox
             // 
-            this.ciuperciTextBox.Location = new System.Drawing.Point(267, 395);
-            this.ciuperciTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.ciuperciTextBox.Name = "ciuperciTextBox";
-            this.ciuperciTextBox.Size = new System.Drawing.Size(60, 22);
-            this.ciuperciTextBox.TabIndex = 3;
+            this.menu1TextBox.Location = new System.Drawing.Point(267, 395);
+            this.menu1TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.menu1TextBox.Name = "menu1TextBox";
+            this.menu1TextBox.Size = new System.Drawing.Size(60, 22);
+            this.menu1TextBox.TabIndex = 3;
+            this.menu1TextBox.TextChanged += new System.EventHandler(this.ciuperciTextBox_TextChanged);
             // 
             // menu0CheckBox
             // 
@@ -177,23 +178,23 @@
             this.menu4CheckBox.UseVisualStyleBackColor = true;
             this.menu4CheckBox.CheckedChanged += new System.EventHandler(this.cartofiPaiCheckBox_CheckedChanged);
             // 
-            // chifteleVegTextBox
+            // menu5TextBox
             // 
-            this.chifteleVegTextBox.Location = new System.Drawing.Point(663, 391);
-            this.chifteleVegTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.chifteleVegTextBox.Name = "chifteleVegTextBox";
-            this.chifteleVegTextBox.Size = new System.Drawing.Size(60, 22);
-            this.chifteleVegTextBox.TabIndex = 9;
-            this.chifteleVegTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.menu5TextBox.Location = new System.Drawing.Point(663, 391);
+            this.menu5TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.menu5TextBox.Name = "menu5TextBox";
+            this.menu5TextBox.Size = new System.Drawing.Size(60, 22);
+            this.menu5TextBox.TabIndex = 9;
+            this.menu5TextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // cartofiPaiTextBox
+            // menu4TextBox
             // 
-            this.cartofiPaiTextBox.Location = new System.Drawing.Point(663, 325);
-            this.cartofiPaiTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.cartofiPaiTextBox.Name = "cartofiPaiTextBox";
-            this.cartofiPaiTextBox.Size = new System.Drawing.Size(60, 22);
-            this.cartofiPaiTextBox.TabIndex = 8;
-            this.cartofiPaiTextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.menu4TextBox.Location = new System.Drawing.Point(663, 325);
+            this.menu4TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.menu4TextBox.Name = "menu4TextBox";
+            this.menu4TextBox.Size = new System.Drawing.Size(60, 22);
+            this.menu4TextBox.TabIndex = 8;
+            this.menu4TextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // menu3CheckBox
             // 
@@ -221,21 +222,21 @@
             this.menu2CheckBox.UseVisualStyleBackColor = true;
             this.menu2CheckBox.CheckedChanged += new System.EventHandler(this.mamaligaCheckBox_CheckedChanged);
             // 
-            // sarmaleTextBox
+            // menu3TextBox
             // 
-            this.sarmaleTextBox.Location = new System.Drawing.Point(267, 518);
-            this.sarmaleTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.sarmaleTextBox.Name = "sarmaleTextBox";
-            this.sarmaleTextBox.Size = new System.Drawing.Size(60, 22);
-            this.sarmaleTextBox.TabIndex = 13;
+            this.menu3TextBox.Location = new System.Drawing.Point(267, 518);
+            this.menu3TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.menu3TextBox.Name = "menu3TextBox";
+            this.menu3TextBox.Size = new System.Drawing.Size(60, 22);
+            this.menu3TextBox.TabIndex = 13;
             // 
-            // mamaligaTextBox
+            // menu2TextBox
             // 
-            this.mamaligaTextBox.Location = new System.Drawing.Point(267, 457);
-            this.mamaligaTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.mamaligaTextBox.Name = "mamaligaTextBox";
-            this.mamaligaTextBox.Size = new System.Drawing.Size(60, 22);
-            this.mamaligaTextBox.TabIndex = 12;
+            this.menu2TextBox.Location = new System.Drawing.Point(267, 457);
+            this.menu2TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.menu2TextBox.Name = "menu2TextBox";
+            this.menu2TextBox.Size = new System.Drawing.Size(60, 22);
+            this.menu2TextBox.TabIndex = 12;
             // 
             // menu7CheckBox
             // 
@@ -263,21 +264,22 @@
             this.menu6CheckBox.UseVisualStyleBackColor = true;
             this.menu6CheckBox.CheckedChanged += new System.EventHandler(this.ciorbaCheckBox_CheckedChanged);
             // 
-            // gulasTextBox
+            // menu7TextBox
             // 
-            this.gulasTextBox.Location = new System.Drawing.Point(663, 514);
-            this.gulasTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.gulasTextBox.Name = "gulasTextBox";
-            this.gulasTextBox.Size = new System.Drawing.Size(60, 22);
-            this.gulasTextBox.TabIndex = 17;
+            this.menu7TextBox.Location = new System.Drawing.Point(663, 514);
+            this.menu7TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.menu7TextBox.Name = "menu7TextBox";
+            this.menu7TextBox.Size = new System.Drawing.Size(60, 22);
+            this.menu7TextBox.TabIndex = 17;
+            this.menu7TextBox.TextChanged += new System.EventHandler(this.menu7TextBox_TextChanged);
             // 
-            // ciorbaTextBox
+            // menu6TextBox
             // 
-            this.ciorbaTextBox.Location = new System.Drawing.Point(663, 457);
-            this.ciorbaTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.ciorbaTextBox.Name = "ciorbaTextBox";
-            this.ciorbaTextBox.Size = new System.Drawing.Size(60, 22);
-            this.ciorbaTextBox.TabIndex = 16;
+            this.menu6TextBox.Location = new System.Drawing.Point(663, 457);
+            this.menu6TextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.menu6TextBox.Name = "menu6TextBox";
+            this.menu6TextBox.Size = new System.Drawing.Size(60, 22);
+            this.menu6TextBox.TabIndex = 16;
             // 
             // totalButton
             // 
@@ -390,21 +392,21 @@
             this.Controls.Add(this.totalButton);
             this.Controls.Add(this.menu7CheckBox);
             this.Controls.Add(this.menu6CheckBox);
-            this.Controls.Add(this.gulasTextBox);
-            this.Controls.Add(this.ciorbaTextBox);
+            this.Controls.Add(this.menu7TextBox);
+            this.Controls.Add(this.menu6TextBox);
             this.Controls.Add(this.menu3CheckBox);
             this.Controls.Add(this.menu2CheckBox);
-            this.Controls.Add(this.sarmaleTextBox);
-            this.Controls.Add(this.mamaligaTextBox);
+            this.Controls.Add(this.menu3TextBox);
+            this.Controls.Add(this.menu2TextBox);
             this.Controls.Add(this.menu5CheckBox);
             this.Controls.Add(this.menu4CheckBox);
-            this.Controls.Add(this.chifteleVegTextBox);
-            this.Controls.Add(this.cartofiPaiTextBox);
+            this.Controls.Add(this.menu5TextBox);
+            this.Controls.Add(this.menu4TextBox);
             this.Controls.Add(this.Mark);
             this.Controls.Add(this.menu1CheckBox);
             this.Controls.Add(this.menu0CheckBox);
-            this.Controls.Add(this.ciuperciTextBox);
-            this.Controls.Add(this.pasteTextBox);
+            this.Controls.Add(this.menu1TextBox);
+            this.Controls.Add(this.menu0TextBox);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.pictureBox1);
@@ -421,24 +423,24 @@
 
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button resetButton;
-        private System.Windows.Forms.TextBox pasteTextBox;
-        private System.Windows.Forms.TextBox ciuperciTextBox;
+        private System.Windows.Forms.TextBox menu0TextBox;
+        private System.Windows.Forms.TextBox menu1TextBox;
         private System.Windows.Forms.CheckBox menu0CheckBox;
         private System.Windows.Forms.CheckBox menu1CheckBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label Mark;
         private System.Windows.Forms.CheckBox menu5CheckBox;
         private System.Windows.Forms.CheckBox menu4CheckBox;
-        private System.Windows.Forms.TextBox chifteleVegTextBox;
-        private System.Windows.Forms.TextBox cartofiPaiTextBox;
+        private System.Windows.Forms.TextBox menu5TextBox;
+        private System.Windows.Forms.TextBox menu4TextBox;
         private System.Windows.Forms.CheckBox menu3CheckBox;
         private System.Windows.Forms.CheckBox menu2CheckBox;
-        private System.Windows.Forms.TextBox sarmaleTextBox;
-        private System.Windows.Forms.TextBox mamaligaTextBox;
+        private System.Windows.Forms.TextBox menu3TextBox;
+        private System.Windows.Forms.TextBox menu2TextBox;
         private System.Windows.Forms.CheckBox menu7CheckBox;
         private System.Windows.Forms.CheckBox menu6CheckBox;
-        private System.Windows.Forms.TextBox gulasTextBox;
-        private System.Windows.Forms.TextBox ciorbaTextBox;
+        private System.Windows.Forms.TextBox menu7TextBox;
+        private System.Windows.Forms.TextBox menu6TextBox;
         private System.Windows.Forms.Button totalButton;
         private System.Windows.Forms.RichTextBox preturiRichTextBox;
         private System.Windows.Forms.Label totalLabel;

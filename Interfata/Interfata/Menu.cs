@@ -19,7 +19,7 @@ namespace Interfata
        private string[] _meniu;
         private string _numeLocal;
         private string _tipDeLocal;
-
+        private double[] _cantitateProduse;
         // 
 
         // In constructor va fi trimisa o clasa de tip magazin ce are stocate datele necesare paginii.
@@ -27,7 +27,7 @@ namespace Interfata
         {
             InitializeComponent();
             EnableTextBoxes();
-
+            InitCantitate();
             _preturi = local.Preturi;
             _meniu = local.Meniu;
             _numeLocal = local.NumeleDeLocal;
@@ -39,6 +39,7 @@ namespace Interfata
             TipLabel.Text = _tipDeLocal;
 
 
+     
             menu0CheckBox.Text = _meniu[0];
             menu1CheckBox.Text = _meniu[1];
             menu2CheckBox.Text = _meniu[2];
@@ -60,6 +61,14 @@ namespace Interfata
                 Application.Exit();
         }
 
+        private void InitCantitate()
+        {
+            _cantitateProduse = new double[8]; 
+            for(int i=0;i<8;i++)
+            {
+                _cantitateProduse[i] = 0;
+            }
+        }
         private void resetTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -111,35 +120,37 @@ namespace Interfata
             resetCheckBoxes();
         }
 
-        private void cartofiPaiCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void menu4CheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menu4CheckBox.Checked == true)
             {
-                cartofiPaiTextBox.Enabled = true;
-                cartofiPaiTextBox.Text = "";
-                cartofiPaiTextBox.Focus();
+
+                menu4CheckBox.Enabled = true;
+                menu4CheckBox.Text = "";
+                menu4CheckBox.Focus();
             }
             else
             {
-                cartofiPaiTextBox.Enabled = false;
-                cartofiPaiTextBox.Text = "0";
+                menu4CheckBox.Enabled = false;
+                menu4CheckBox.Text = "0";
             }
 
 
         }
 
-        private void chifteleVegCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void menu5CheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menu5CheckBox.Checked == true)
             {
-                chifteleVegTextBox.Enabled = true;
-                chifteleVegTextBox.Text = "";
-                chifteleVegTextBox.Focus();
+
+                menu5CheckBox.Enabled = true;
+                menu5CheckBox.Text = "";
+                menu5CheckBox.Focus();
             }
             else
             {
-                chifteleVegTextBox.Enabled = false;
-                chifteleVegTextBox.Text = "0";
+                menu5CheckBox.Enabled = false;
+                menu5CheckBox.Text = "0";
             }
         }
 
@@ -153,18 +164,19 @@ namespace Interfata
 
         }
 
-        private void pasteCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void menu0CheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menu0CheckBox.Checked == true)
             {
-                pasteTextBox.Enabled = true;
-                pasteTextBox.Text = "";
-                pasteTextBox.Focus();
+
+                menu0TextBox.Enabled = true;
+                menu0TextBox.Text = "";
+                menu0TextBox.Focus();
             }
             else
             {
-                pasteTextBox.Enabled = false;
-                pasteTextBox.Text = "0";
+                menu0TextBox.Enabled = false;
+                menu0TextBox.Text = "0";
             }
         }
 
@@ -172,14 +184,15 @@ namespace Interfata
         {
             if (menu1CheckBox.Checked == true)
             {
-                ciuperciTextBox.Enabled = true;
-                ciuperciTextBox.Text = "";
-                ciuperciTextBox.Focus();
+
+                menu1TextBox.Enabled = true;
+                menu1TextBox.Text = "";
+                menu1TextBox.Focus();
             }
             else
             {
-                ciuperciTextBox.Enabled = false;
-                ciuperciTextBox.Text = "0";
+                menu1TextBox.Enabled = false;
+                menu1TextBox.Text = "0";
             }
         }
 
@@ -187,14 +200,15 @@ namespace Interfata
         {
             if (menu2CheckBox.Checked == true)
             {
-                mamaligaTextBox.Enabled = true;
-                mamaligaTextBox.Text = "";
-                mamaligaTextBox.Focus();
+
+                menu2TextBox.Enabled = true;
+                menu2TextBox.Text = "";
+                menu2TextBox.Focus();
             }
             else
             {
-                mamaligaTextBox.Enabled = false;
-                mamaligaTextBox.Text = "0";
+                menu2TextBox.Enabled = false;
+                menu2TextBox.Text = "0";
             }
         }
 
@@ -202,14 +216,15 @@ namespace Interfata
         {
             if (menu3CheckBox.Checked == true)
             {
-                sarmaleTextBox.Enabled = true;
-                sarmaleTextBox.Text = "";
-                sarmaleTextBox.Focus();
+
+                menu3TextBox.Enabled = true;
+                menu3TextBox.Text = "";
+                menu3TextBox.Focus();
             }
             else
             {
-                sarmaleTextBox.Enabled = false;
-                sarmaleTextBox.Text = "0";
+                menu3TextBox.Enabled = false;
+                menu3TextBox.Text = "0";
             }
         }
 
@@ -217,14 +232,15 @@ namespace Interfata
         {
             if (menu6CheckBox.Checked == true)
             {
-                ciorbaTextBox.Enabled = true;
-                ciorbaTextBox.Text = "";
-                ciorbaTextBox.Focus();
+
+                menu6TextBox.Enabled = true;
+                menu6TextBox.Text = "";
+                menu6TextBox.Focus();
             }
             else
             {
-                ciorbaTextBox.Enabled = false;
-                ciorbaTextBox.Text = "0";
+                menu6TextBox.Enabled = false;
+                menu6TextBox.Text = "0";
             }
 
         }
@@ -233,14 +249,15 @@ namespace Interfata
         {
             if (menu7CheckBox.Checked)
             {
-                gulasTextBox.Enabled = true;
-                gulasTextBox.Text = "";
-                gulasTextBox.Focus();
+    
+                menu7TextBox.Enabled = true;
+                menu7TextBox.Text = "";
+                menu7TextBox.Focus();
             }
             else
             {
-                gulasTextBox.Enabled = false;
-                gulasTextBox.Text = "0";
+                menu7TextBox.Enabled = false;
+                menu7TextBox.Text = "0";
             }
 
         }
@@ -325,9 +342,18 @@ namespace Interfata
             {
                 if (totalTextBox.Text == "ERR" || totalTextBox.Text == ""||totalTextBox.Text=="0")
                     throw new Exception();
-         
-            Hide();
-            Bon_de_ordin form = new Bon_de_ordin(_meniu,_preturi, totalTextBox.Text);
+
+                if (menu0CheckBox.Checked) _cantitateProduse[0] = Convert.ToInt32(menu0TextBox.Text);
+                if (menu0CheckBox.Checked) _cantitateProduse[1] = Convert.ToInt32(menu1TextBox.Text);
+                if (menu0CheckBox.Checked) _cantitateProduse[2] = Convert.ToInt32(menu2TextBox.Text);
+                if (menu0CheckBox.Checked) _cantitateProduse[3] = Convert.ToInt32(menu3TextBox.Text);
+                if (menu0CheckBox.Checked) _cantitateProduse[4] = Convert.ToInt32(menu4TextBox.Text);
+                if (menu0CheckBox.Checked) _cantitateProduse[5] = Convert.ToInt32(menu5TextBox.Text);
+                if (menu0CheckBox.Checked) _cantitateProduse[6] = Convert.ToInt32(menu6TextBox.Text);
+                if (menu0CheckBox.Checked) _cantitateProduse[7] = Convert.ToInt32(menu7TextBox.Text);
+
+                Hide();
+            Bon_de_ordin form = new Bon_de_ordin(_meniu,_preturi, totalTextBox.Text, _cantitateProduse);
             form.Show();
             }
             catch(Exception ex)
@@ -338,6 +364,16 @@ namespace Interfata
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ciuperciTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menu7TextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

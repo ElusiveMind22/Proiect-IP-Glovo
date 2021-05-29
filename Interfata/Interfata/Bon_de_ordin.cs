@@ -25,8 +25,16 @@ namespace Interfata
     public partial class Bon_de_ordin : Form
     {
         private readonly Random _random = new Random();
-        public Bon_de_ordin(string[] meniuri, double[] preturi, string total)
+        private string[] _meniuri;
+        private double[] _preturi;
+        private string _total;
+        private double[] _cantitateProduse;
+        public Bon_de_ordin(string[] meniuri, double[] preturi, string total, double[] cantitateProduse )
         {
+            _meniuri = meniuri;
+            _preturi = preturi;
+            _total = total;
+            _cantitateProduse = cantitateProduse;
             InitializeComponent();
             dateTimePicker1.MinDate = dateTimePicker2.MinDate = dateTimePicker3.MinDate = dateTimePicker4.MinDate=DateTime.Now;
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
@@ -59,6 +67,7 @@ namespace Interfata
                 
                 if (MessageBox.Show("Doriti bon de ordin?", " ", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
+                    int val = 500;
                     PrintPreviewDialog p = new PrintPreviewDialog();
                     p.Document = new PrintDocument();
                     p.Document.PrintPage += (a, b) =>
@@ -76,6 +85,17 @@ namespace Interfata
                         b.Graphics.DrawString("Data livrare:", drawFont1, Brushes.Red, 150, 180);
                         b.Graphics.DrawString(dateTimePicker4.Value.ToShortDateString(), drawFont1, Brushes.Black, 300, 180);
                         b.Graphics.DrawString(dateTimePicker2.Value.ToLongTimeString(), drawFont1, Brushes.Black, 400, 180);
+                       
+                        for(int i=0;i<8;i++)
+                        {
+                            if(!(_cantitateProduse[i]==0))
+                            {
+                                b.Graphics.DrawString(_meniuri[i], drawFont1, Brushes.Black, val, 180);
+                                val += 100;
+                            }
+                            
+                        }
+
                        
                     };
                     p.ShowDialog();
