@@ -77,7 +77,7 @@ namespace Interfata
                     };
                     p.ShowDialog();
 
-                    this.Close();
+                    Close();
                 }
             }
             catch (Exception ex)

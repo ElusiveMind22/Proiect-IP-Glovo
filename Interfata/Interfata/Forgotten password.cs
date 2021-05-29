@@ -43,9 +43,9 @@ namespace Interfata
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;");
             conn.Open();
-            SqlCommand cmd = new SqlCommand();
+            SqlCommand cmd = new SqlCommand();  
             cmd.Connection = conn;
-            SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From [Table] Where email='" + EmailTextBox.Text + "'", conn);
+            SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From [Table] Where mail='" + EmailTextBox.Text + "'", conn);
             DataTable dta = new DataTable();
             sql.Fill(dta);
             if (dta.Rows[0][0].ToString() == "1")
@@ -95,7 +95,7 @@ namespace Interfata
             conn.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "update [table] set password=@password where email='"+_userEmail+"'";
+            cmd.CommandText = "update [table] set password=@password where mail='"+_userEmail+"'";
             cmd.Parameters.AddWithValue("@password", EmailTextBox.Text);
 
                 if (cmd.ExecuteNonQuery() > 0)

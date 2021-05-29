@@ -43,5 +43,4 @@ C:\Users\vicev\OneDrive\Documents\GitHub\Ceva de la Alberto\Proiect-IP-Glovo\Int
 C:\Users\vicev\OneDrive\Documents\GitHub\Ceva de la Alberto\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\ProiectIP.Bon_de_ordin.resources
 C:\Users\vicev\OneDrive\Documents\GitHub\Ceva de la Alberto\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\ProiectIP.Inregistreaza.resources
 C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Forgotten_password.resources
-C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\ProiectIP.Inregistreaza.resources
 C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Bon_de_ordin.resources

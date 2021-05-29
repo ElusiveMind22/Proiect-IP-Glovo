@@ -58,12 +58,6 @@
     <Compile Include="Forgotten password.Designer.cs">
       <DependentUpon>Forgotten password.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inregistreaza.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Inregistreaza.designer.cs">
-      <DependentUpon>Inregistreaza.cs</DependentUpon>
-    </Compile>
     <Compile Include="Localuri\FastFood\MagazineFastFood.cs" />
     <Compile Include="Localuri\FastFood\McDonalds.cs" />
     <Compile Include="Localuri\FastFood\Kfc.cs" />
@@ -118,9 +112,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forgotten password.resx">
       <DependentUpon>Forgotten password.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Inregistreaza.resx">
-      <DependentUpon>Inregistreaza.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log in.resx">
       <DependentUpon>Log in.cs</DependentUpon>
