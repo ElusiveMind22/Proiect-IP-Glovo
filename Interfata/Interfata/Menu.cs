@@ -1,4 +1,4 @@
-﻿using Interfata.Localuri;
+﻿using LocaluriLibrary.Localuri;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +15,12 @@ namespace Interfata
     {
 
         // Variabilele vor fi luate din clasa. sunt 8 date.
-       private double[] _preturi;
-       private string[] _meniu;
+        private double[] _preturi;
+        private string[] _meniu;
         private string _numeLocal;
         private string _tipDeLocal;
         private double[] _cantitateProduse;
+
         // 
 
         // In constructor va fi trimisa o clasa de tip magazin ce are stocate datele necesare paginii.
@@ -35,24 +36,73 @@ namespace Interfata
 
             
             
-            TitluLabel.Text = _numeLocal;
-            TipLabel.Text = _tipDeLocal;
+            LocalLabel.Text = _numeLocal;
+            RestaurantLabel.Text = _tipDeLocal;
 
 
-     
-            menu0CheckBox.Text = _meniu[0];
-            menu1CheckBox.Text = _meniu[1];
-            menu2CheckBox.Text = _meniu[2];
-            menu3CheckBox.Text = _meniu[3];
-            menu4CheckBox.Text = _meniu[4];
-            menu5CheckBox.Text = _meniu[5];
-            menu6CheckBox.Text = _meniu[6];
-            menu7CheckBox.Text = _meniu[7];
+            menuCheckBox0.Text = _meniu[0];
+            menuCheckBox1.Text = _meniu[1];
+            menuCheckBox2.Text = _meniu[2];
+            menuCheckBox3.Text = _meniu[3];
+            menuCheckBox4.Text = _meniu[4];
+            menuCheckBox5.Text = _meniu[5];
+            menuCheckBox6.Text = _meniu[6];
+            menuCheckBox7.Text = _meniu[7];
 
 
+            menuTextBox1.Text = "0"; 
+            menuTextBox0.Text = "0";
+            menuTextBox3.Text = "0";
+            menuTextBox2.Text = "0";
+            menuTextBox7.Text = "0";
+            menuTextBox6.Text = "0";
+            menuTextBox5.Text = "0";
+            menuTextBox4.Text = "0";
 
+
+            //background transparent
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label1.Parent = pictureBox1;
+
+            menuCheckBox0.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox0.Parent = pictureBox1;
+
+            menuCheckBox1.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox1.Parent = pictureBox1;
+
+            menuCheckBox2.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox2.Parent = pictureBox1;
+
+            menuCheckBox3.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox3.Parent = pictureBox1;
+
+            menuCheckBox4.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox4.Parent = pictureBox1;
+
+            menuCheckBox5.BackColor= System.Drawing.Color.Transparent; 
+            menuCheckBox5.Parent = pictureBox1;
+
+            menuCheckBox6.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox6.Parent = pictureBox1;
+
+            menuCheckBox7.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox7.Parent = pictureBox1;
+
+            label2.BackColor= System.Drawing.Color.Transparent;
+            label2.Parent = pictureBox1;
+
+            totalLabel.BackColor= System.Drawing.Color.Transparent;
+            totalLabel.Parent = pictureBox1;
         }
 
+        private void InitCantitate()
+        {
+            _cantitateProduse = new double[8];
+            for (int i = 0; i < 8; i++)
+            {
+                _cantitateProduse[i] = 0;
+            }
+        }
         private void exitButton_Click(object sender, EventArgs e)
         {
             DialogResult iExit;
@@ -61,14 +111,6 @@ namespace Interfata
                 Application.Exit();
         }
 
-        private void InitCantitate()
-        {
-            _cantitateProduse = new double[8]; 
-            for(int i=0;i<8;i++)
-            {
-                _cantitateProduse[i] = 0;
-            }
-        }
         private void resetTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -115,42 +157,41 @@ namespace Interfata
 
         private void resetButton_Click(object sender, EventArgs e)
         {
-            preturiRichTextBox.Text = "";
             resetTextBoxes();
             resetCheckBoxes();
         }
 
-        private void menu4CheckBox_CheckedChanged(object sender, EventArgs e)
+        private void cartofiPaiCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (menu4CheckBox.Checked == true)
+           
+            if (menuCheckBox4.Checked == true)
             {
-
-                menu4CheckBox.Enabled = true;
-                menu4CheckBox.Text = "";
-                menu4CheckBox.Focus();
+                menuTextBox4.Enabled = true;
+                menuTextBox4.Text = "";
+                menuTextBox4.Focus();
             }
             else
             {
-                menu4CheckBox.Enabled = false;
-                menu4CheckBox.Text = "0";
+                menuTextBox4.Enabled = false;
+                menuTextBox4.Text = "0";
             }
 
 
         }
 
-        private void menu5CheckBox_CheckedChanged(object sender, EventArgs e)
+        private void chifteleVegCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (menu5CheckBox.Checked == true)
-            {
 
-                menu5CheckBox.Enabled = true;
-                menu5CheckBox.Text = "";
-                menu5CheckBox.Focus();
+            if (menuCheckBox5.Checked == true)
+            {
+                menuTextBox5.Enabled = true;
+                menuTextBox5.Text = "";
+                menuTextBox5.Focus();
             }
             else
             {
-                menu5CheckBox.Enabled = false;
-                menu5CheckBox.Text = "0";
+                menuTextBox5.Enabled = false;
+                menuTextBox5.Text = "0";
             }
         }
 
@@ -164,100 +205,94 @@ namespace Interfata
 
         }
 
-        private void menu0CheckBox_CheckedChanged(object sender, EventArgs e)
+        private void pasteCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (menu0CheckBox.Checked == true)
+            if (menuCheckBox0.Checked == true)
             {
-
-                menu0TextBox.Enabled = true;
-                menu0TextBox.Text = "";
-                menu0TextBox.Focus();
+                menuTextBox0.Enabled = true;
+                menuTextBox0.Text = "";
+                menuTextBox0.Focus();
             }
             else
             {
-                menu0TextBox.Enabled = false;
-                menu0TextBox.Text = "0";
+                menuTextBox0.Enabled = false;
+                menuTextBox0.Text = "0";
             }
         }
 
         private void ciuperciCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (menu1CheckBox.Checked == true)
+            if (menuCheckBox1.Checked == true)
             {
-
-                menu1TextBox.Enabled = true;
-                menu1TextBox.Text = "";
-                menu1TextBox.Focus();
+                menuTextBox1.Enabled = true;
+                menuTextBox1.Text = "";
+                menuTextBox1.Focus();
             }
             else
             {
-                menu1TextBox.Enabled = false;
-                menu1TextBox.Text = "0";
+                menuTextBox1.Enabled = false;
+                menuTextBox1.Text = "0";
             }
         }
 
         private void mamaligaCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (menu2CheckBox.Checked == true)
+            if (menuCheckBox2.Checked == true)
             {
-
-                menu2TextBox.Enabled = true;
-                menu2TextBox.Text = "";
-                menu2TextBox.Focus();
+                menuTextBox2.Enabled = true;
+                menuTextBox2.Text = "";
+                menuTextBox2.Focus();
             }
             else
             {
-                menu2TextBox.Enabled = false;
-                menu2TextBox.Text = "0";
+                menuTextBox2.Enabled = false;
+                menuTextBox2.Text = "0";
             }
         }
 
         private void sarmaleCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (menu3CheckBox.Checked == true)
+            if (menuCheckBox3.Checked == true)
             {
-
-                menu3TextBox.Enabled = true;
-                menu3TextBox.Text = "";
-                menu3TextBox.Focus();
+                menuTextBox3.Enabled = true;
+                menuTextBox3.Text = "";
+                menuTextBox3.Focus();
             }
             else
             {
-                menu3TextBox.Enabled = false;
-                menu3TextBox.Text = "0";
+                menuTextBox3.Enabled = false;
+                menuTextBox3.Text = "0";
             }
         }
 
         private void ciorbaCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (menu6CheckBox.Checked == true)
+            if (menuCheckBox6.Checked == true)
             {
-
-                menu6TextBox.Enabled = true;
-                menu6TextBox.Text = "";
-                menu6TextBox.Focus();
+                menuTextBox6.Enabled = true;
+                menuTextBox6.Text = "";
+                menuTextBox6.Focus();
             }
             else
             {
-                menu6TextBox.Enabled = false;
-                menu6TextBox.Text = "0";
+                menuTextBox6.Enabled = false;
+                menuTextBox6.Text = "0";
             }
 
         }
 
         private void gulasCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (menu7CheckBox.Checked)
+            if (menuCheckBox7.Checked)
             {
-    
-                menu7TextBox.Enabled = true;
-                menu7TextBox.Text = "";
-                menu7TextBox.Focus();
+                menuTextBox7.Enabled = true;
+                menuTextBox7.Text = "";
+                menuTextBox7.Focus();
             }
             else
             {
-                menu7TextBox.Enabled = false;
-                menu7TextBox.Text = "0";
+                menuTextBox7.Enabled = false;
+                menuTextBox7.Text = "0";
             }
 
         }
@@ -266,14 +301,14 @@ namespace Interfata
         { try
             {
                 double[] pretProdus = new double[8];
-                pretProdus[0] = Convert.ToDouble(menu0CheckBox.Text) * _preturi[0];
-                pretProdus[1] = Convert.ToDouble(menu1CheckBox.Text) * _preturi[1];
-                pretProdus[2] = Convert.ToDouble(menu2CheckBox.Text) * _preturi[2];
-                pretProdus[3] = Convert.ToDouble(menu3CheckBox.Text) * _preturi[3];
-                pretProdus[4] = Convert.ToDouble(menu4CheckBox.Text) * _preturi[4];
-                pretProdus[5] = Convert.ToDouble(menu5CheckBox.Text) * _preturi[5];
-                pretProdus[6] = Convert.ToDouble(menu6CheckBox.Text) * _preturi[6];
-                pretProdus[7] = Convert.ToDouble(menu7CheckBox.Text) * _preturi[7];
+                pretProdus[0] = Convert.ToDouble(menuTextBox4.Text) * _preturi[0];
+                pretProdus[1] = Convert.ToDouble(menuTextBox0.Text) * _preturi[1];
+                pretProdus[2] = Convert.ToDouble(menuTextBox1.Text) * _preturi[2];
+                pretProdus[3] = Convert.ToDouble(menuTextBox3.Text) * _preturi[3];
+                pretProdus[4] = Convert.ToDouble(menuTextBox2.Text) * _preturi[4];
+                pretProdus[5] = Convert.ToDouble(menuTextBox7.Text) * _preturi[5];
+                pretProdus[6] = Convert.ToDouble(menuTextBox6.Text) * _preturi[6];
+                pretProdus[7] = Convert.ToDouble(menuTextBox5.Text) * _preturi[7];
 
                 double total = 0.0;
                 for (int i = 0; i < 8; ++i)
@@ -285,7 +320,6 @@ namespace Interfata
             }
             catch(FormatException ex)
             {
-
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 totalTextBox.Text = "ERR";
             }
@@ -340,40 +374,31 @@ namespace Interfata
         {
             try
             {
-                if (totalTextBox.Text == "ERR" || totalTextBox.Text == ""||totalTextBox.Text=="0")
+                if (totalTextBox.Text == "ERR" || totalTextBox.Text == "" || totalTextBox.Text == "0")
                     throw new Exception();
+             
+                if (menuCheckBox0.Checked) _cantitateProduse[0] = Convert.ToDouble(menuTextBox0.Text);
+                if (menuCheckBox1.Checked) _cantitateProduse[1] = Convert.ToDouble(menuTextBox1.Text);
+                if (menuCheckBox2.Checked) _cantitateProduse[2] = Convert.ToDouble(menuTextBox2.Text);
+                if (menuCheckBox3.Checked) _cantitateProduse[3] = Convert.ToDouble(menuTextBox3.Text);
+                if (menuCheckBox4.Checked) _cantitateProduse[4] = Convert.ToDouble(menuTextBox4.Text);
+                if (menuCheckBox5.Checked) _cantitateProduse[5] = Convert.ToDouble(menuTextBox5.Text);
+                if (menuCheckBox6.Checked) _cantitateProduse[6] = Convert.ToDouble(menuTextBox6.Text);
+                if (menuCheckBox7.Checked) _cantitateProduse[7] = Convert.ToDouble(menuTextBox7.Text);
 
-                if (menu0CheckBox.Checked) _cantitateProduse[0] = Convert.ToInt32(menu0TextBox.Text);
-                if (menu0CheckBox.Checked) _cantitateProduse[1] = Convert.ToInt32(menu1TextBox.Text);
-                if (menu0CheckBox.Checked) _cantitateProduse[2] = Convert.ToInt32(menu2TextBox.Text);
-                if (menu0CheckBox.Checked) _cantitateProduse[3] = Convert.ToInt32(menu3TextBox.Text);
-                if (menu0CheckBox.Checked) _cantitateProduse[4] = Convert.ToInt32(menu4TextBox.Text);
-                if (menu0CheckBox.Checked) _cantitateProduse[5] = Convert.ToInt32(menu5TextBox.Text);
-                if (menu0CheckBox.Checked) _cantitateProduse[6] = Convert.ToInt32(menu6TextBox.Text);
-                if (menu0CheckBox.Checked) _cantitateProduse[7] = Convert.ToInt32(menu7TextBox.Text);
 
                 Hide();
-            Bon_de_ordin form = new Bon_de_ordin(_meniu,_preturi, totalTextBox.Text, _cantitateProduse);
-            form.Show();
+                BonDeOrdin form = new BonDeOrdin(_meniu, _preturi, totalTextBox.Text, _cantitateProduse);
+                form.Show();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Nu poti da comanda fara sa alegi ce sa mananci", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error) ;
+                MessageBox.Show("Nu poti da comanda fara sa alegi ce sa mananci", ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ciuperciTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menu7TextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -31,262 +31,270 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.exitButton = new System.Windows.Forms.Button();
             this.resetButton = new System.Windows.Forms.Button();
-            this.menu0TextBox = new System.Windows.Forms.TextBox();
-            this.menu1TextBox = new System.Windows.Forms.TextBox();
-            this.menu0CheckBox = new System.Windows.Forms.CheckBox();
-            this.menu1CheckBox = new System.Windows.Forms.CheckBox();
+            this.menuTextBox0 = new System.Windows.Forms.TextBox();
+            this.menuTextBox1 = new System.Windows.Forms.TextBox();
+            this.menuCheckBox0 = new System.Windows.Forms.CheckBox();
+            this.menuCheckBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Mark = new System.Windows.Forms.Label();
-            this.menu5CheckBox = new System.Windows.Forms.CheckBox();
-            this.menu4CheckBox = new System.Windows.Forms.CheckBox();
-            this.menu5TextBox = new System.Windows.Forms.TextBox();
-            this.menu4TextBox = new System.Windows.Forms.TextBox();
-            this.menu3CheckBox = new System.Windows.Forms.CheckBox();
-            this.menu2CheckBox = new System.Windows.Forms.CheckBox();
-            this.menu3TextBox = new System.Windows.Forms.TextBox();
-            this.menu2TextBox = new System.Windows.Forms.TextBox();
-            this.menu7CheckBox = new System.Windows.Forms.CheckBox();
-            this.menu6CheckBox = new System.Windows.Forms.CheckBox();
-            this.menu7TextBox = new System.Windows.Forms.TextBox();
-            this.menu6TextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.menuCheckBox5 = new System.Windows.Forms.CheckBox();
+            this.menuCheckBox4 = new System.Windows.Forms.CheckBox();
+            this.menuTextBox5 = new System.Windows.Forms.TextBox();
+            this.menuTextBox4 = new System.Windows.Forms.TextBox();
+            this.menuCheckBox3 = new System.Windows.Forms.CheckBox();
+            this.menuCheckBox2 = new System.Windows.Forms.CheckBox();
+            this.menuTextBox3 = new System.Windows.Forms.TextBox();
+            this.menuTextBox2 = new System.Windows.Forms.TextBox();
+            this.menuCheckBox7 = new System.Windows.Forms.CheckBox();
+            this.menuCheckBox6 = new System.Windows.Forms.CheckBox();
+            this.menuTextBox7 = new System.Windows.Forms.TextBox();
+            this.menuTextBox6 = new System.Windows.Forms.TextBox();
             this.totalButton = new System.Windows.Forms.Button();
             this.preturiRichTextBox = new System.Windows.Forms.RichTextBox();
             this.totalLabel = new System.Windows.Forms.Label();
             this.totalTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.TitluLabel = new System.Windows.Forms.Label();
             this.RestaurantButton = new System.Windows.Forms.Button();
-            this.TipLabel = new System.Windows.Forms.Label();
             this.PlaseazaComandaButton = new System.Windows.Forms.Button();
+            this.LocalLabel = new System.Windows.Forms.Label();
+            this.RestaurantLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(503, 854);
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(25, 956);
             this.exitButton.Margin = new System.Windows.Forms.Padding(4);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(149, 26);
+            this.exitButton.Size = new System.Drawing.Size(245, 41);
             this.exitButton.TabIndex = 0;
-            this.exitButton.Text = "EXIT";
+            this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // resetButton
             // 
-            this.resetButton.Location = new System.Drawing.Point(503, 774);
+            this.resetButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetButton.Location = new System.Drawing.Point(503, 743);
             this.resetButton.Margin = new System.Windows.Forms.Padding(4);
             this.resetButton.Name = "resetButton";
-            this.resetButton.Size = new System.Drawing.Size(149, 28);
+            this.resetButton.Size = new System.Drawing.Size(245, 41);
             this.resetButton.TabIndex = 1;
             this.resetButton.Text = "Reset";
             this.resetButton.UseVisualStyleBackColor = true;
             this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
-            // menu0TextBox
+            // menuTextBox0
             // 
-            this.menu0TextBox.Location = new System.Drawing.Point(267, 325);
-            this.menu0TextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu0TextBox.Name = "menu0TextBox";
-            this.menu0TextBox.Size = new System.Drawing.Size(60, 22);
-            this.menu0TextBox.TabIndex = 2;
+            this.menuTextBox0.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuTextBox0.Location = new System.Drawing.Point(348, 318);
+            this.menuTextBox0.Margin = new System.Windows.Forms.Padding(4);
+            this.menuTextBox0.Name = "menuTextBox0";
+            this.menuTextBox0.Size = new System.Drawing.Size(60, 29);
+            this.menuTextBox0.TabIndex = 2;
             // 
-            // menu1TextBox
+            // menuTextBox1
             // 
-            this.menu1TextBox.Location = new System.Drawing.Point(267, 395);
-            this.menu1TextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu1TextBox.Name = "menu1TextBox";
-            this.menu1TextBox.Size = new System.Drawing.Size(60, 22);
-            this.menu1TextBox.TabIndex = 3;
-            this.menu1TextBox.TextChanged += new System.EventHandler(this.ciuperciTextBox_TextChanged);
+            this.menuTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuTextBox1.Location = new System.Drawing.Point(348, 385);
+            this.menuTextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.menuTextBox1.Name = "menuTextBox1";
+            this.menuTextBox1.Size = new System.Drawing.Size(60, 29);
+            this.menuTextBox1.TabIndex = 3;
             // 
-            // menu0CheckBox
+            // menuCheckBox0
             // 
-            this.menu0CheckBox.AutoSize = true;
-            this.menu0CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu0CheckBox.Location = new System.Drawing.Point(64, 321);
-            this.menu0CheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu0CheckBox.Name = "menu0CheckBox";
-            this.menu0CheckBox.Size = new System.Drawing.Size(129, 33);
-            this.menu0CheckBox.TabIndex = 4;
-            this.menu0CheckBox.Text = "Menu[0]";
-            this.menu0CheckBox.UseVisualStyleBackColor = true;
-            this.menu0CheckBox.CheckedChanged += new System.EventHandler(this.pasteCheckBox_CheckedChanged);
+            this.menuCheckBox0.AutoSize = true;
+            this.menuCheckBox0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCheckBox0.Location = new System.Drawing.Point(25, 318);
+            this.menuCheckBox0.Margin = new System.Windows.Forms.Padding(4);
+            this.menuCheckBox0.Name = "menuCheckBox0";
+            this.menuCheckBox0.Size = new System.Drawing.Size(149, 33);
+            this.menuCheckBox0.TabIndex = 4;
+            this.menuCheckBox0.Text = "MenuItem";
+            this.menuCheckBox0.UseVisualStyleBackColor = true;
+            this.menuCheckBox0.CheckedChanged += new System.EventHandler(this.pasteCheckBox_CheckedChanged);
             // 
-            // menu1CheckBox
+            // menuCheckBox1
             // 
-            this.menu1CheckBox.AutoSize = true;
-            this.menu1CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu1CheckBox.Location = new System.Drawing.Point(64, 383);
-            this.menu1CheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu1CheckBox.Name = "menu1CheckBox";
-            this.menu1CheckBox.Size = new System.Drawing.Size(129, 33);
-            this.menu1CheckBox.TabIndex = 5;
-            this.menu1CheckBox.Text = "Menu[1]";
-            this.menu1CheckBox.UseVisualStyleBackColor = true;
-            this.menu1CheckBox.CheckedChanged += new System.EventHandler(this.ciuperciCheckBox_CheckedChanged);
+            this.menuCheckBox1.AutoSize = true;
+            this.menuCheckBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCheckBox1.Location = new System.Drawing.Point(25, 379);
+            this.menuCheckBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.menuCheckBox1.Name = "menuCheckBox1";
+            this.menuCheckBox1.Size = new System.Drawing.Size(149, 33);
+            this.menuCheckBox1.TabIndex = 5;
+            this.menuCheckBox1.Text = "MenuItem";
+            this.menuCheckBox1.UseVisualStyleBackColor = true;
+            this.menuCheckBox1.CheckedChanged += new System.EventHandler(this.ciuperciCheckBox_CheckedChanged);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkGreen;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(832, 1100);
+            this.pictureBox1.Size = new System.Drawing.Size(624, 894);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // Mark
+            // label1
             // 
-            this.Mark.AutoSize = true;
-            this.Mark.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.Mark.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Mark.Location = new System.Drawing.Point(23, 154);
-            this.Mark.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Mark.Name = "Mark";
-            this.Mark.Size = new System.Drawing.Size(646, 69);
-            this.Mark.TabIndex = 7;
-            this.Mark.Text = "Alege produsele dorite";
-            this.Mark.Click += new System.EventHandler(this.label1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(24, 178);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(646, 69);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Alege produsele dorite";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // menu5CheckBox
+            // menuCheckBox5
             // 
-            this.menu5CheckBox.AutoSize = true;
-            this.menu5CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu5CheckBox.Location = new System.Drawing.Point(377, 386);
-            this.menu5CheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu5CheckBox.Name = "menu5CheckBox";
-            this.menu5CheckBox.Size = new System.Drawing.Size(129, 33);
-            this.menu5CheckBox.TabIndex = 11;
-            this.menu5CheckBox.Text = "Menu[5]";
-            this.menu5CheckBox.UseVisualStyleBackColor = true;
-            this.menu5CheckBox.CheckedChanged += new System.EventHandler(this.chifteleVegCheckBox_CheckedChanged);
+            this.menuCheckBox5.AutoSize = true;
+            this.menuCheckBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCheckBox5.Location = new System.Drawing.Point(441, 383);
+            this.menuCheckBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.menuCheckBox5.Name = "menuCheckBox5";
+            this.menuCheckBox5.Size = new System.Drawing.Size(149, 33);
+            this.menuCheckBox5.TabIndex = 11;
+            this.menuCheckBox5.Text = "MenuItem";
+            this.menuCheckBox5.UseVisualStyleBackColor = true;
+            this.menuCheckBox5.CheckedChanged += new System.EventHandler(this.chifteleVegCheckBox_CheckedChanged);
             // 
-            // menu4CheckBox
+            // menuCheckBox4
             // 
-            this.menu4CheckBox.AutoSize = true;
-            this.menu4CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu4CheckBox.Location = new System.Drawing.Point(377, 321);
-            this.menu4CheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu4CheckBox.Name = "menu4CheckBox";
-            this.menu4CheckBox.Size = new System.Drawing.Size(129, 33);
-            this.menu4CheckBox.TabIndex = 10;
-            this.menu4CheckBox.Text = "Menu[4]";
-            this.menu4CheckBox.UseVisualStyleBackColor = true;
-            this.menu4CheckBox.CheckedChanged += new System.EventHandler(this.cartofiPaiCheckBox_CheckedChanged);
+            this.menuCheckBox4.AutoSize = true;
+            this.menuCheckBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCheckBox4.Location = new System.Drawing.Point(441, 318);
+            this.menuCheckBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.menuCheckBox4.Name = "menuCheckBox4";
+            this.menuCheckBox4.Size = new System.Drawing.Size(149, 33);
+            this.menuCheckBox4.TabIndex = 10;
+            this.menuCheckBox4.Text = "MenuItem";
+            this.menuCheckBox4.UseVisualStyleBackColor = true;
+            this.menuCheckBox4.CheckedChanged += new System.EventHandler(this.cartofiPaiCheckBox_CheckedChanged);
             // 
-            // menu5TextBox
+            // menuTextBox5
             // 
-            this.menu5TextBox.Location = new System.Drawing.Point(663, 391);
-            this.menu5TextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu5TextBox.Name = "menu5TextBox";
-            this.menu5TextBox.Size = new System.Drawing.Size(60, 22);
-            this.menu5TextBox.TabIndex = 9;
-            this.menu5TextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.menuTextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuTextBox5.Location = new System.Drawing.Point(756, 384);
+            this.menuTextBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.menuTextBox5.Name = "menuTextBox5";
+            this.menuTextBox5.Size = new System.Drawing.Size(60, 29);
+            this.menuTextBox5.TabIndex = 9;
+            this.menuTextBox5.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // menu4TextBox
+            // menuTextBox4
             // 
-            this.menu4TextBox.Location = new System.Drawing.Point(663, 325);
-            this.menu4TextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu4TextBox.Name = "menu4TextBox";
-            this.menu4TextBox.Size = new System.Drawing.Size(60, 22);
-            this.menu4TextBox.TabIndex = 8;
-            this.menu4TextBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.menuTextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuTextBox4.Location = new System.Drawing.Point(756, 318);
+            this.menuTextBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.menuTextBox4.Name = "menuTextBox4";
+            this.menuTextBox4.Size = new System.Drawing.Size(60, 29);
+            this.menuTextBox4.TabIndex = 8;
+            this.menuTextBox4.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // menu3CheckBox
+            // menuCheckBox3
             // 
-            this.menu3CheckBox.AutoSize = true;
-            this.menu3CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu3CheckBox.Location = new System.Drawing.Point(64, 510);
-            this.menu3CheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu3CheckBox.Name = "menu3CheckBox";
-            this.menu3CheckBox.Size = new System.Drawing.Size(129, 33);
-            this.menu3CheckBox.TabIndex = 15;
-            this.menu3CheckBox.Text = "Menu[3]";
-            this.menu3CheckBox.UseVisualStyleBackColor = true;
-            this.menu3CheckBox.CheckedChanged += new System.EventHandler(this.sarmaleCheckBox_CheckedChanged);
+            this.menuCheckBox3.AutoSize = true;
+            this.menuCheckBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCheckBox3.Location = new System.Drawing.Point(25, 506);
+            this.menuCheckBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.menuCheckBox3.Name = "menuCheckBox3";
+            this.menuCheckBox3.Size = new System.Drawing.Size(149, 33);
+            this.menuCheckBox3.TabIndex = 15;
+            this.menuCheckBox3.Text = "MenuItem";
+            this.menuCheckBox3.UseVisualStyleBackColor = true;
+            this.menuCheckBox3.CheckedChanged += new System.EventHandler(this.sarmaleCheckBox_CheckedChanged);
             // 
-            // menu2CheckBox
+            // menuCheckBox2
             // 
-            this.menu2CheckBox.AutoSize = true;
-            this.menu2CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu2CheckBox.Location = new System.Drawing.Point(64, 448);
-            this.menu2CheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu2CheckBox.Name = "menu2CheckBox";
-            this.menu2CheckBox.Size = new System.Drawing.Size(129, 33);
-            this.menu2CheckBox.TabIndex = 14;
-            this.menu2CheckBox.Text = "Menu[2]";
-            this.menu2CheckBox.UseVisualStyleBackColor = true;
-            this.menu2CheckBox.CheckedChanged += new System.EventHandler(this.mamaligaCheckBox_CheckedChanged);
+            this.menuCheckBox2.AutoSize = true;
+            this.menuCheckBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCheckBox2.Location = new System.Drawing.Point(25, 444);
+            this.menuCheckBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.menuCheckBox2.Name = "menuCheckBox2";
+            this.menuCheckBox2.Size = new System.Drawing.Size(149, 33);
+            this.menuCheckBox2.TabIndex = 14;
+            this.menuCheckBox2.Text = "MenuItem";
+            this.menuCheckBox2.UseVisualStyleBackColor = true;
+            this.menuCheckBox2.CheckedChanged += new System.EventHandler(this.mamaligaCheckBox_CheckedChanged);
             // 
-            // menu3TextBox
+            // menuTextBox3
             // 
-            this.menu3TextBox.Location = new System.Drawing.Point(267, 518);
-            this.menu3TextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu3TextBox.Name = "menu3TextBox";
-            this.menu3TextBox.Size = new System.Drawing.Size(60, 22);
-            this.menu3TextBox.TabIndex = 13;
+            this.menuTextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuTextBox3.Location = new System.Drawing.Point(348, 508);
+            this.menuTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.menuTextBox3.Name = "menuTextBox3";
+            this.menuTextBox3.Size = new System.Drawing.Size(60, 29);
+            this.menuTextBox3.TabIndex = 13;
             // 
-            // menu2TextBox
+            // menuTextBox2
             // 
-            this.menu2TextBox.Location = new System.Drawing.Point(267, 457);
-            this.menu2TextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu2TextBox.Name = "menu2TextBox";
-            this.menu2TextBox.Size = new System.Drawing.Size(60, 22);
-            this.menu2TextBox.TabIndex = 12;
+            this.menuTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuTextBox2.Location = new System.Drawing.Point(348, 447);
+            this.menuTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.menuTextBox2.Name = "menuTextBox2";
+            this.menuTextBox2.Size = new System.Drawing.Size(60, 29);
+            this.menuTextBox2.TabIndex = 12;
             // 
-            // menu7CheckBox
+            // menuCheckBox7
             // 
-            this.menu7CheckBox.AutoSize = true;
-            this.menu7CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu7CheckBox.Location = new System.Drawing.Point(377, 510);
-            this.menu7CheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu7CheckBox.Name = "menu7CheckBox";
-            this.menu7CheckBox.Size = new System.Drawing.Size(129, 33);
-            this.menu7CheckBox.TabIndex = 19;
-            this.menu7CheckBox.Text = "Menu[7]";
-            this.menu7CheckBox.UseVisualStyleBackColor = true;
-            this.menu7CheckBox.CheckedChanged += new System.EventHandler(this.gulasCheckBox_CheckedChanged);
+            this.menuCheckBox7.AutoSize = true;
+            this.menuCheckBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCheckBox7.Location = new System.Drawing.Point(441, 506);
+            this.menuCheckBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.menuCheckBox7.Name = "menuCheckBox7";
+            this.menuCheckBox7.Size = new System.Drawing.Size(149, 33);
+            this.menuCheckBox7.TabIndex = 19;
+            this.menuCheckBox7.Text = "MenuItem";
+            this.menuCheckBox7.UseVisualStyleBackColor = true;
+            this.menuCheckBox7.CheckedChanged += new System.EventHandler(this.gulasCheckBox_CheckedChanged);
             // 
-            // menu6CheckBox
+            // menuCheckBox6
             // 
-            this.menu6CheckBox.AutoSize = true;
-            this.menu6CheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu6CheckBox.Location = new System.Drawing.Point(377, 448);
-            this.menu6CheckBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu6CheckBox.Name = "menu6CheckBox";
-            this.menu6CheckBox.Size = new System.Drawing.Size(129, 33);
-            this.menu6CheckBox.TabIndex = 18;
-            this.menu6CheckBox.Text = "Menu[6]";
-            this.menu6CheckBox.UseVisualStyleBackColor = true;
-            this.menu6CheckBox.CheckedChanged += new System.EventHandler(this.ciorbaCheckBox_CheckedChanged);
+            this.menuCheckBox6.AutoSize = true;
+            this.menuCheckBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuCheckBox6.Location = new System.Drawing.Point(441, 444);
+            this.menuCheckBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.menuCheckBox6.Name = "menuCheckBox6";
+            this.menuCheckBox6.Size = new System.Drawing.Size(149, 33);
+            this.menuCheckBox6.TabIndex = 18;
+            this.menuCheckBox6.Text = "MenuItem";
+            this.menuCheckBox6.UseVisualStyleBackColor = true;
+            this.menuCheckBox6.CheckedChanged += new System.EventHandler(this.ciorbaCheckBox_CheckedChanged);
             // 
-            // menu7TextBox
+            // menuTextBox7
             // 
-            this.menu7TextBox.Location = new System.Drawing.Point(663, 514);
-            this.menu7TextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu7TextBox.Name = "menu7TextBox";
-            this.menu7TextBox.Size = new System.Drawing.Size(60, 22);
-            this.menu7TextBox.TabIndex = 17;
-            this.menu7TextBox.TextChanged += new System.EventHandler(this.menu7TextBox_TextChanged);
+            this.menuTextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuTextBox7.Location = new System.Drawing.Point(756, 507);
+            this.menuTextBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.menuTextBox7.Name = "menuTextBox7";
+            this.menuTextBox7.Size = new System.Drawing.Size(60, 29);
+            this.menuTextBox7.TabIndex = 17;
             // 
-            // menu6TextBox
+            // menuTextBox6
             // 
-            this.menu6TextBox.Location = new System.Drawing.Point(663, 457);
-            this.menu6TextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.menu6TextBox.Name = "menu6TextBox";
-            this.menu6TextBox.Size = new System.Drawing.Size(60, 22);
-            this.menu6TextBox.TabIndex = 16;
+            this.menuTextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuTextBox6.Location = new System.Drawing.Point(756, 449);
+            this.menuTextBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.menuTextBox6.Name = "menuTextBox6";
+            this.menuTextBox6.Size = new System.Drawing.Size(60, 29);
+            this.menuTextBox6.TabIndex = 16;
             // 
             // totalButton
             // 
-            this.totalButton.Location = new System.Drawing.Point(503, 653);
+            this.totalButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalButton.Location = new System.Drawing.Point(503, 683);
             this.totalButton.Margin = new System.Windows.Forms.Padding(4);
             this.totalButton.Name = "totalButton";
-            this.totalButton.Size = new System.Drawing.Size(149, 32);
+            this.totalButton.Size = new System.Drawing.Size(245, 41);
             this.totalButton.TabIndex = 20;
             this.totalButton.Text = "Total";
             this.totalButton.UseVisualStyleBackColor = true;
@@ -308,7 +316,7 @@
             // 
             this.totalLabel.AutoSize = true;
             this.totalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalLabel.Location = new System.Drawing.Point(507, 581);
+            this.totalLabel.Location = new System.Drawing.Point(499, 633);
             this.totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(87, 29);
@@ -317,96 +325,99 @@
             // 
             // totalTextBox
             // 
-            this.totalTextBox.Location = new System.Drawing.Point(503, 623);
+            this.totalTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalTextBox.Location = new System.Drawing.Point(597, 629);
             this.totalTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.totalTextBox.Name = "totalTextBox";
-            this.totalTextBox.Size = new System.Drawing.Size(149, 22);
+            this.totalTextBox.Size = new System.Drawing.Size(149, 30);
             this.totalTextBox.TabIndex = 24;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 581);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(20, 604);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(282, 20);
+            this.label2.Size = new System.Drawing.Size(350, 24);
             this.label2.TabIndex = 25;
             this.label2.Text = "Apasa *space* pentru a afla preturile";
             // 
-            // TitluLabel
-            // 
-            this.TitluLabel.AutoSize = true;
-            this.TitluLabel.Location = new System.Drawing.Point(209, 272);
-            this.TitluLabel.Name = "TitluLabel";
-            this.TitluLabel.Size = new System.Drawing.Size(35, 17);
-            this.TitluLabel.TabIndex = 26;
-            this.TitluLabel.Text = "Titlu";
-            this.TitluLabel.Click += new System.EventHandler(this.label3_Click);
-            // 
             // RestaurantButton
             // 
-            this.RestaurantButton.Location = new System.Drawing.Point(503, 810);
+            this.RestaurantButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RestaurantButton.Location = new System.Drawing.Point(25, 887);
             this.RestaurantButton.Margin = new System.Windows.Forms.Padding(4);
             this.RestaurantButton.Name = "RestaurantButton";
-            this.RestaurantButton.Size = new System.Drawing.Size(149, 36);
+            this.RestaurantButton.Size = new System.Drawing.Size(245, 41);
             this.RestaurantButton.TabIndex = 27;
-            this.RestaurantButton.Text = "Alt_Restaurant";
+            this.RestaurantButton.Text = "Alt Restaurant";
             this.RestaurantButton.UseVisualStyleBackColor = true;
             this.RestaurantButton.Click += new System.EventHandler(this.RestaurantButton_Click);
             // 
-            // TipLabel
-            // 
-            this.TipLabel.AutoSize = true;
-            this.TipLabel.Location = new System.Drawing.Point(209, 242);
-            this.TipLabel.Name = "TipLabel";
-            this.TipLabel.Size = new System.Drawing.Size(28, 17);
-            this.TipLabel.TabIndex = 28;
-            this.TipLabel.Text = "Tip";
-            this.TipLabel.Click += new System.EventHandler(this.label4_Click);
-            // 
             // PlaseazaComandaButton
             // 
-            this.PlaseazaComandaButton.Location = new System.Drawing.Point(503, 693);
+            this.PlaseazaComandaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlaseazaComandaButton.Location = new System.Drawing.Point(503, 806);
             this.PlaseazaComandaButton.Margin = new System.Windows.Forms.Padding(4);
             this.PlaseazaComandaButton.Name = "PlaseazaComandaButton";
-            this.PlaseazaComandaButton.Size = new System.Drawing.Size(139, 61);
+            this.PlaseazaComandaButton.Size = new System.Drawing.Size(245, 41);
             this.PlaseazaComandaButton.TabIndex = 29;
-            this.PlaseazaComandaButton.Text = "PlaseazaComanda";
+            this.PlaseazaComandaButton.Text = "Plaseaza Comanda";
             this.PlaseazaComandaButton.UseVisualStyleBackColor = true;
             this.PlaseazaComandaButton.Click += new System.EventHandler(this.PlaseazaComandaButton_Click);
+            // 
+            // LocalLabel
+            // 
+            this.LocalLabel.AutoSize = true;
+            this.LocalLabel.Location = new System.Drawing.Point(172, 279);
+            this.LocalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LocalLabel.Name = "LocalLabel";
+            this.LocalLabel.Size = new System.Drawing.Size(42, 17);
+            this.LocalLabel.TabIndex = 30;
+            this.LocalLabel.Text = "Local";
+            // 
+            // RestaurantLabel
+            // 
+            this.RestaurantLabel.AutoSize = true;
+            this.RestaurantLabel.Location = new System.Drawing.Point(501, 279);
+            this.RestaurantLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RestaurantLabel.Name = "RestaurantLabel";
+            this.RestaurantLabel.Size = new System.Drawing.Size(78, 17);
+            this.RestaurantLabel.TabIndex = 31;
+            this.RestaurantLabel.Text = "Restaurant";
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 1055);
+            this.ClientSize = new System.Drawing.Size(832, 1020);
+            this.Controls.Add(this.RestaurantLabel);
+            this.Controls.Add(this.LocalLabel);
             this.Controls.Add(this.PlaseazaComandaButton);
-            this.Controls.Add(this.TipLabel);
             this.Controls.Add(this.RestaurantButton);
-            this.Controls.Add(this.TitluLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.totalTextBox);
             this.Controls.Add(this.totalLabel);
             this.Controls.Add(this.preturiRichTextBox);
             this.Controls.Add(this.totalButton);
-            this.Controls.Add(this.menu7CheckBox);
-            this.Controls.Add(this.menu6CheckBox);
-            this.Controls.Add(this.menu7TextBox);
-            this.Controls.Add(this.menu6TextBox);
-            this.Controls.Add(this.menu3CheckBox);
-            this.Controls.Add(this.menu2CheckBox);
-            this.Controls.Add(this.menu3TextBox);
-            this.Controls.Add(this.menu2TextBox);
-            this.Controls.Add(this.menu5CheckBox);
-            this.Controls.Add(this.menu4CheckBox);
-            this.Controls.Add(this.menu5TextBox);
-            this.Controls.Add(this.menu4TextBox);
-            this.Controls.Add(this.Mark);
-            this.Controls.Add(this.menu1CheckBox);
-            this.Controls.Add(this.menu0CheckBox);
-            this.Controls.Add(this.menu1TextBox);
-            this.Controls.Add(this.menu0TextBox);
+            this.Controls.Add(this.menuCheckBox7);
+            this.Controls.Add(this.menuCheckBox6);
+            this.Controls.Add(this.menuTextBox7);
+            this.Controls.Add(this.menuTextBox6);
+            this.Controls.Add(this.menuCheckBox3);
+            this.Controls.Add(this.menuCheckBox2);
+            this.Controls.Add(this.menuTextBox3);
+            this.Controls.Add(this.menuTextBox2);
+            this.Controls.Add(this.menuCheckBox5);
+            this.Controls.Add(this.menuCheckBox4);
+            this.Controls.Add(this.menuTextBox5);
+            this.Controls.Add(this.menuTextBox4);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuCheckBox1);
+            this.Controls.Add(this.menuCheckBox0);
+            this.Controls.Add(this.menuTextBox1);
+            this.Controls.Add(this.menuTextBox0);
             this.Controls.Add(this.resetButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.pictureBox1);
@@ -423,33 +434,33 @@
 
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button resetButton;
-        private System.Windows.Forms.TextBox menu0TextBox;
-        private System.Windows.Forms.TextBox menu1TextBox;
-        private System.Windows.Forms.CheckBox menu0CheckBox;
-        private System.Windows.Forms.CheckBox menu1CheckBox;
+        private System.Windows.Forms.TextBox menuTextBox0;
+        private System.Windows.Forms.TextBox menuTextBox1;
+        private System.Windows.Forms.CheckBox menuCheckBox0;
+        private System.Windows.Forms.CheckBox menuCheckBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label Mark;
-        private System.Windows.Forms.CheckBox menu5CheckBox;
-        private System.Windows.Forms.CheckBox menu4CheckBox;
-        private System.Windows.Forms.TextBox menu5TextBox;
-        private System.Windows.Forms.TextBox menu4TextBox;
-        private System.Windows.Forms.CheckBox menu3CheckBox;
-        private System.Windows.Forms.CheckBox menu2CheckBox;
-        private System.Windows.Forms.TextBox menu3TextBox;
-        private System.Windows.Forms.TextBox menu2TextBox;
-        private System.Windows.Forms.CheckBox menu7CheckBox;
-        private System.Windows.Forms.CheckBox menu6CheckBox;
-        private System.Windows.Forms.TextBox menu7TextBox;
-        private System.Windows.Forms.TextBox menu6TextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox menuCheckBox5;
+        private System.Windows.Forms.CheckBox menuCheckBox4;
+        private System.Windows.Forms.TextBox menuTextBox5;
+        private System.Windows.Forms.TextBox menuTextBox4;
+        private System.Windows.Forms.CheckBox menuCheckBox3;
+        private System.Windows.Forms.CheckBox menuCheckBox2;
+        private System.Windows.Forms.TextBox menuTextBox3;
+        private System.Windows.Forms.TextBox menuTextBox2;
+        private System.Windows.Forms.CheckBox menuCheckBox7;
+        private System.Windows.Forms.CheckBox menuCheckBox6;
+        private System.Windows.Forms.TextBox menuTextBox7;
+        private System.Windows.Forms.TextBox menuTextBox6;
         private System.Windows.Forms.Button totalButton;
         private System.Windows.Forms.RichTextBox preturiRichTextBox;
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.TextBox totalTextBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label TitluLabel;
         private System.Windows.Forms.Button RestaurantButton;
-        private System.Windows.Forms.Label TipLabel;
         private System.Windows.Forms.Button PlaseazaComandaButton;
+        private System.Windows.Forms.Label LocalLabel;
+        private System.Windows.Forms.Label RestaurantLabel;
     }
 }
 

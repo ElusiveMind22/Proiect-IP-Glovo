@@ -17,6 +17,24 @@ namespace Interfata
         {
             InitializeComponent();
             parolaLogInTextBox.PasswordChar = '•';
+            //fcaem label-uri transparente
+            logInLabel.BackColor = System.Drawing.Color.Transparent;
+            logInLabel.Parent = pictureBox1;
+
+            usernameLogInLabel.BackColor=System.Drawing.Color.Transparent;
+            usernameLogInLabel.Parent = pictureBox1;
+
+
+            parolaLogInLabel.BackColor = System.Drawing.Color.Transparent;
+            parolaLogInLabel.Parent = pictureBox1;
+
+
+            checkBox_afiseaza_parola.BackColor = System.Drawing.Color.Transparent;
+            checkBox_afiseaza_parola.Parent = pictureBox1;
+
+            rememberMeCheckBox.BackColor = System.Drawing.Color.Transparent;
+            rememberMeCheckBox.Parent = pictureBox1;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -24,7 +42,7 @@ namespace Interfata
             try
             {
 
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;");
+                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;"); ;
                 SqlDataAdapter sql = new SqlDataAdapter();
                 SqlCommand cmd = new SqlCommand();
                 conn.Open();
@@ -90,21 +108,6 @@ namespace Interfata
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void usernameLogInTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void parolaLogInTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rememberMeCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void LogIn_Load(object sender, EventArgs e)

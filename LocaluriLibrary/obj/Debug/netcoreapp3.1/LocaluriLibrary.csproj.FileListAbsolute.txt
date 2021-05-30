@@ -1,0 +1,18 @@
+E:\Code\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.deps.json
+E:\Code\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.dll
+E:\Code\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.pdb
+E:\Code\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.csprojAssemblyReference.cache
+E:\Code\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.AssemblyInfoInputs.cache
+E:\Code\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.AssemblyInfo.cs
+E:\Code\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.csproj.CoreCompileInputs.cache
+E:\Code\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.dll
+E:\Code\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.pdb
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.deps.json
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.dll
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.pdb
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.csprojAssemblyReference.cache
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.AssemblyInfoInputs.cache
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.AssemblyInfo.cs
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.csproj.CoreCompileInputs.cache
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.dll
+C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.pdb

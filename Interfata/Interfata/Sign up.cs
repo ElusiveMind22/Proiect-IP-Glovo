@@ -18,6 +18,30 @@ namespace Interfata
             InitializeComponent();
             parolaSignUpTextBox.PasswordChar = '•';
             parolaConfirmSignUpTextBox.PasswordChar = '•';
+
+            signUpLabel.BackColor = System.Drawing.Color.Transparent;
+            signUpLabel.Parent = pictureBox1;
+
+            usernameSignUpLabel.BackColor = System.Drawing.Color.Transparent;
+            usernameSignUpLabel.Parent = pictureBox1;
+
+            parolaSignUpLabel.BackColor = System.Drawing.Color.Transparent;
+            parolaSignUpLabel.Parent = pictureBox1;
+
+            emailSignUpLabel.BackColor = System.Drawing.Color.Transparent;
+            emailSignUpLabel.Parent = pictureBox1;
+
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label1.Parent = pictureBox1;
+
+            checkBox_afiseaza_parola.BackColor = System.Drawing.Color.Transparent;
+            checkBox_afiseaza_parola.Parent = pictureBox1;
+
+            gdprCheckBox.BackColor= System.Drawing.Color.Transparent;
+            gdprCheckBox.Parent = pictureBox1;
+
+            newsletterCheckBox.BackColor= System.Drawing.Color.Transparent;
+            newsletterCheckBox.Parent = pictureBox1;
         }
 
         private void Sign_up_Load(object sender, EventArgs e)
@@ -146,6 +170,11 @@ namespace Interfata
             parolaSignUpTextBox.Text = "";
             parolaConfirmSignUpTextBox.Text = "";
             emailSignUpTextBox.Focus();
+        }
+
+        private void usernameSignUpLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

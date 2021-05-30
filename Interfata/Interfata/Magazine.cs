@@ -1,5 +1,5 @@
-﻿using Interfata.Localuri;
-using Interfata.Localuri.MagazineFactories;
+﻿using LocaluriLibrary.Localuri;
+using LocaluriLibrary.Localuri.MagazineFactories;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,8 +29,20 @@ namespace Interfata
 
             _restFact = new Restaurant();
             _fastFact = new FastFood();
-           
-           
+
+            signUpLabel.BackColor = System.Drawing.Color.Transparent;
+            signUpLabel.Parent = pictureBox1;
+
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label1.Parent = pictureBox1;
+
+            RestaurantRadio.BackColor= System.Drawing.Color.Transparent;
+            RestaurantRadio.Parent = pictureBox1;
+
+            FastFoodRadio.BackColor= System.Drawing.Color.Transparent;
+            FastFoodRadio.Parent = pictureBox1;
+
+
         }
 
             private void label1_Click(object sender, EventArgs e)
@@ -61,8 +73,11 @@ namespace Interfata
 
             private void button1_Click(object sender, EventArgs e)
             {
+            DialogResult iExit;
+            iExit = MessageBox.Show("Sigur vrei sa iesi?", "Glovo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (iExit == DialogResult.Yes)
                 Application.Exit();
-            }
+        }
 
             private void veziMeniuButton_Click(object sender, EventArgs e)
             {
@@ -134,13 +149,13 @@ namespace Interfata
             {
                 Console.WriteLine("{0} Exception caught.", ex);
                 MessageBox.Show("NU AI BIFAT CASUTA!!");
-                Application.Exit();
+
             }
             catch (Exception ex)
             {
                 Console.WriteLine("{0} Exception caught.", ex);
                 MessageBox.Show("Nu ai selectat Restaurant!!");
-              
+
             }
         }
 
@@ -149,25 +164,7 @@ namespace Interfata
 
             }
 
-            private void magazineComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-            {
-                
-            }
 
-        private void FastFoodRadio_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RestaurantRadio_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void signUpLabel_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void SelectLocal_Click(object sender, EventArgs e)
         {
@@ -203,15 +200,10 @@ namespace Interfata
             }
         }
 
-        private void magazineComboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-            
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
     }
-    }
+}
 

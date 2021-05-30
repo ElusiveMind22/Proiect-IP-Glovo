@@ -15,32 +15,21 @@ namespace Interfata
         public Main()
         {
             InitializeComponent();
-            welcomeLabel.BackColor = System.Drawing.Color.Transparent;
+            welcomeLabel.BackColor = Color.Transparent;
+            welcomeLabel.Parent = pictureBox1;
 
-        }
-
-        private void Main_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void welcomeLabel_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+            label1.BackColor = Color.Transparent;
+            label1.Parent = pictureBox1;
 
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
 
-        private void HelpButton_Click(object sender, EventArgs e)
-        {
-
+            DialogResult iExit;
+            iExit = MessageBox.Show("Sigur vrei sa iesi?", "Glovo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (iExit == DialogResult.Yes)
+                Application.Exit();
         }
 
         private void LogInButton_Click(object sender, EventArgs e)
@@ -56,5 +45,6 @@ namespace Interfata
             Sign_up form = new Sign_up();
             form.Show();
         }
+
     }
 }

@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LocaluriLibrary">
+      <HintPath>.\LocaluriLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,35 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bon_de_ordin.cs">
+    <Compile Include="BonDeOrdin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bon_de_ordin.designer.cs">
-      <DependentUpon>Bon_de_ordin.cs</DependentUpon>
+    <Compile Include="BonDeOrdin.designer.cs">
+      <DependentUpon>BonDeOrdin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forgotten password.cs">
+    <Compile Include="ParolaUitata.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forgotten password.Designer.cs">
-      <DependentUpon>Forgotten password.cs</DependentUpon>
+    <Compile Include="ParolaUitata.Designer.cs">
+      <DependentUpon>ParolaUitata.cs</DependentUpon>
     </Compile>
-    <Compile Include="Localuri\FastFood\MagazineFastFood.cs" />
-    <Compile Include="Localuri\FastFood\McDonalds.cs" />
-    <Compile Include="Localuri\FastFood\Kfc.cs" />
-    <Compile Include="Localuri\Locale.cs" />
-    <Compile Include="Localuri\MagazineFactories\FastFood.cs" />
-    <Compile Include="Localuri\MagazineFactories\Restaurant.cs" />
-    <Compile Include="Localuri\MagazineFactories\FastFoodType.cs" />
-    <Compile Include="Localuri\MagazineFactories\RestaurantType.cs" />
-    <Compile Include="Localuri\MagazineFactories\LocalFactory.cs" />
-    <Compile Include="Localuri\Restaurante\MagazineRestaurante.cs" />
-    <Compile Include="Localuri\Restaurante\MammaMia.cs" />
-    <Compile Include="Localuri\Restaurante\Delicio.cs" />
-    <Compile Include="Localuri\Restaurante\SplendEat.cs" />
-    <Compile Include="Localuri\Restaurante\Cartuf.cs" />
-    <Compile Include="Localuri\Restaurante\Oxford.cs" />
-    <Compile Include="Localuri\Restaurante\LaCuib.cs" />
-    <Compile Include="Localuri\Restaurante\NoodlePack.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,11 +93,11 @@
     <Compile Include="Sign up.Designer.cs">
       <DependentUpon>Sign up.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Bon_de_ordin.resx">
-      <DependentUpon>Bon_de_ordin.cs</DependentUpon>
+    <EmbeddedResource Include="BonDeOrdin.resx">
+      <DependentUpon>BonDeOrdin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forgotten password.resx">
-      <DependentUpon>Forgotten password.cs</DependentUpon>
+    <EmbeddedResource Include="ParolaUitata.resx">
+      <DependentUpon>ParolaUitata.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Log in.resx">
       <DependentUpon>Log in.cs</DependentUpon>
