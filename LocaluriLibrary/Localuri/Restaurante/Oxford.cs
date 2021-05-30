@@ -7,10 +7,20 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.Restaurante
 {
+    /// <summary>
+    /// Clasa ce mosteneste clasa abstracta MagazineRestaurant.
+    /// </summary>
     public class Oxford : MagazineRestaurante
     {
+
+        /// <summary>
+        /// Constructor ce atribuie valorile specifice restaurantului.
+        /// </summary>
         public Oxford() : base()
         {
+
+            //Atribuire Variabile
+
             _meniu = new string[8];
             _meniu[0] = "Salata cu naut";
             _meniu[1] = "Irish nachos";
@@ -32,6 +42,8 @@ namespace LocaluriLibrary.Localuri.Restaurante
             _preturi[7] = 2;
 
             _numeleDeLocal = "Oxford";
+
+            // Gettere - Settere.
 
             Meniu = _meniu;
             Preturi = _preturi;

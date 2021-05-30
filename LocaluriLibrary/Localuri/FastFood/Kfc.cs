@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.FastFood
 {
-   public class Kfc:MagazineFastFood
+
+    /// <summary>
+    /// Clasa ce mosteneste clasa abstracta MagazineFastFood.
+    /// </summary>
+    public class Kfc:MagazineFastFood
     {
+        /// <summary>
+        /// Constructor ce atribuie valorile specifice restaurantului.
+        /// </summary>
         public Kfc():base()
         {
+            //Atribuire Variabile
+
             _meniu = new string[8];
             _meniu[0] = "Aripioare";
             _meniu[1] = "CartofiPrajiti";
@@ -32,6 +41,8 @@ namespace LocaluriLibrary.Localuri.FastFood
 
             
             _numeleDeLocal = "KFC";
+
+            // Gettere - Settere.
 
             Meniu = _meniu;
             Preturi = _preturi;

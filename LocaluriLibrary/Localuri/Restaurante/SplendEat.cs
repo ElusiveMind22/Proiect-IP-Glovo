@@ -7,12 +7,20 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.Restaurante
 {
+    /// <summary>
+    /// Clasa ce mosteneste clasa abstracta MagazineRestaurant.
+    /// </summary>
 
     public class SplendEat : MagazineRestaurante
     {
-
+        /// <summary>
+        /// Constructor ce atribuie valorile specifice restaurantului.
+        /// </summary>
         public SplendEat() : base()
         {
+
+            //Atribuire Variabile
+
             _meniu = new string[8];
             _meniu[0] = "Halloumi burger";
             _meniu[1] = "Hot box";
@@ -34,6 +42,9 @@ namespace LocaluriLibrary.Localuri.Restaurante
             _preturi[7] = 12.09;
 
             _numeleDeLocal = "SplendEat";
+
+            // Gettere - Settere.
+
             Meniu = _meniu;
             Preturi = _preturi;
             NumeleDeLocal = _numeleDeLocal;

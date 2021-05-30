@@ -1,27 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj": {}
+    "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj": {
+    "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj": {
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj",
+        "projectUniqueName": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj",
         "projectName": "Interfata",
-        "projectPath": "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj"
+        "projectPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj": {
+    "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj",
         "projectName": "UnitTests",
-        "projectPath": "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj",
-        "packagesPath": "C:\\Users\\braha\\.nuget\\packages\\",
-        "outputPath": "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\UnitTests\\obj\\",
+        "projectPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj",
+        "packagesPath": "C:\\Users\\vicev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\braha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,8 +37,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj": {
-                "projectPath": "D:\\Facultate\\Anul3\\Semestrul 2\\IP\\Proiect\\Proiect 6A 2021\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj"
+              "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj": {
+                "projectPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj"
               }
             }
           }

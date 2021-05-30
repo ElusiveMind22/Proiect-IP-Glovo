@@ -7,10 +7,19 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.Restaurante
 {
+    /// <summary>
+    /// Clasa ce mosteneste clasa abstracta MagazineRestaurant.
+    /// </summary>
     public class Cartuf : MagazineRestaurante
     {
+        /// <summary>
+        /// Constructor ce atribuie valorile specifice restaurantului.
+        /// </summary>
         public Cartuf() : base()
         {
+            
+            //Atribuire Variabile
+
             _meniu = new string[8];
             _meniu[0] = "Carnaciuf";
             _meniu[1] = "Supertuf";
@@ -33,8 +42,8 @@ namespace LocaluriLibrary.Localuri.Restaurante
 
             _numeleDeLocal = "Cartuf";
 
-            Meniu = _meniu;
-            Preturi = _preturi;
+            // Gettere - Settere.
+
             Meniu = _meniu;
             Preturi = _preturi;
             NumeleDeLocal = _numeleDeLocal;

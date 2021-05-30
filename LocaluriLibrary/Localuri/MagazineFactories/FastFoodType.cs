@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.MagazineFactories
 {
+    /// <summary>
+    /// Enum folosit pentru identificarea tipului de fastfood care va fi generat
+    /// de Factory.
+    /// </summary>
     public enum FastFoodType
     {
-       MCDONALDS,KFC
+        MCDONALDS, KFC
     }
 
 

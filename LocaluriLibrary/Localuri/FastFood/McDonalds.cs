@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.FastFood
 {
-   public class McDonalds:MagazineFastFood
+    /// <summary>
+    /// Clasa ce mosteneste clasa abstracta MagazineFastFood.
+    /// </summary>
+    public class McDonalds:MagazineFastFood
     {
+
+        /// <summary>
+        /// Constructor ce atribuie valorile specifice restaurantului.
+        /// </summary>
         public McDonalds():base()
         {
+            //Atribuire Variabile
+
             _meniu = new string[8];
             _meniu[0] = "Big Mac";
             _meniu[1] = "McChicken";
@@ -32,8 +41,8 @@ namespace LocaluriLibrary.Localuri.FastFood
 
             _numeleDeLocal = "McDonalds";
 
-            Meniu = _meniu;
-            Preturi = _preturi;
+            // Gettere - Settere.
+
             Meniu = _meniu;
             Preturi = _preturi;
             NumeleDeLocal = _numeleDeLocal;

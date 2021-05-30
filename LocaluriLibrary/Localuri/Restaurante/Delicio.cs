@@ -7,10 +7,19 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.Restaurante
 {
+    /// <summary>
+    /// Clasa ce mosteneste clasa abstracta MagazineRestaurant.
+    /// </summary>
     public class Delicio : MagazineRestaurante
     {
+        /// <summary>
+        /// Constructor ce atribuie valorile specifice restaurantului.
+        /// </summary>
         public Delicio() : base()
         {
+
+            //Atribuire Variabile
+
             _meniu = new string[8];
             _meniu[0] = "Pizza Margherita";
             _meniu[1] = "Pizza Diavola";
@@ -32,6 +41,9 @@ namespace LocaluriLibrary.Localuri.Restaurante
             _preturi[7] = 23.99;
 
             _numeleDeLocal = "Delicio";
+
+            // Gettere - Settere.
+
             Meniu = _meniu;
             Preturi = _preturi;
             NumeleDeLocal = _numeleDeLocal;

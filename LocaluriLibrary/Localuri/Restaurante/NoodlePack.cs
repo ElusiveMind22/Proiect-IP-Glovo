@@ -7,12 +7,20 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.Restaurante
 {
+    /// <summary>
+    /// Clasa ce mosteneste clasa abstracta MagazineRestaurant.
+    /// </summary>
     public class NoodlePack : MagazineRestaurante
     {
 
-
+        /// <summary>
+        /// Constructor ce atribuie valorile specifice restaurantului.
+        /// </summary>
         public NoodlePack() : base()
         {
+
+            //Atribuire Variabile
+
             _meniu = new string[8];
             _meniu[0] = "Noodle cu creveti";
             _meniu[1] = "Noodle cu vita";
@@ -34,6 +42,8 @@ namespace LocaluriLibrary.Localuri.Restaurante
             _preturi[7] = 19;
 
             _numeleDeLocal = "NoodlePack";
+
+            // Gettere - Settere.
 
             Meniu = _meniu;
             Preturi = _preturi;
