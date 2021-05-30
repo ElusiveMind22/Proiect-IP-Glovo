@@ -7,7 +7,9 @@ namespace UnitTests
     [TestClass]
     public class TestFactoryLocalName
     {
-        
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void NameKFC()
         {
@@ -15,11 +17,15 @@ namespace UnitTests
             ILocalFactory fastFoodMaker = new FastFood();
             Locale local;
             local = fastFoodMaker.MakeFastFood(FastFoodType.KFC);
-            
+
             //Assert
             Assert.AreEqual("KFC", local.NumeleDeLocal);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void TestAripioareKFC()
         {
@@ -32,6 +38,10 @@ namespace UnitTests
             Assert.AreEqual("Aripioare", local.Meniu[0]);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void NameMcDonalds()
         {
@@ -44,6 +54,10 @@ namespace UnitTests
             Assert.AreEqual("McDonalds", local.NumeleDeLocal);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void NameCartuf()
         {
@@ -53,9 +67,13 @@ namespace UnitTests
             local = restaurantMaker.MakeRestaurant(RestaurantType.CARTUF);
 
             //Assert
-            Assert.AreEqual("Cartuf",local.NumeleDeLocal);
+            Assert.AreEqual("Cartuf", local.NumeleDeLocal);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void NameDelicio()
         {
@@ -68,6 +86,10 @@ namespace UnitTests
             Assert.AreEqual("Delicio", local.NumeleDeLocal);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void NameLaCuib()
         {
@@ -80,6 +102,10 @@ namespace UnitTests
             Assert.AreEqual("LaCuib", local.NumeleDeLocal);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void NameMammaMia()
         {
@@ -92,6 +118,10 @@ namespace UnitTests
             Assert.AreEqual("MammaMia", local.NumeleDeLocal);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void NameNoodlePack()
         {
@@ -104,6 +134,10 @@ namespace UnitTests
             Assert.AreEqual("NoodlePack", local.NumeleDeLocal);
 
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void NameOxford()
         {
@@ -115,10 +149,11 @@ namespace UnitTests
             //Assert
             Assert.AreEqual("Oxford", local.NumeleDeLocal);
         }
+
+        /// <summary>
+        /// Verifica daca 
+        /// </summary>
         [TestMethod]
-        ///
-        ///
-        ///
         public void NameSplendeat()
         {
             //Arrange 
@@ -130,6 +165,6 @@ namespace UnitTests
             Assert.AreEqual("SplendEat", local.NumeleDeLocal);
 
         }
-        
+
     }
 }

@@ -34,8 +34,8 @@ namespace Interfata
             _numeLocal = local.NumeleDeLocal;
             _tipDeLocal = local.TipDeLocal;
 
-            
-            
+
+
             LocalLabel.Text = _numeLocal;
             RestaurantLabel.Text = _tipDeLocal;
 
@@ -50,7 +50,7 @@ namespace Interfata
             menuCheckBox7.Text = _meniu[7];
 
 
-            menuTextBox1.Text = "0"; 
+            menuTextBox1.Text = "0";
             menuTextBox0.Text = "0";
             menuTextBox3.Text = "0";
             menuTextBox2.Text = "0";
@@ -64,37 +64,40 @@ namespace Interfata
             label1.BackColor = System.Drawing.Color.Transparent;
             label1.Parent = pictureBox1;
 
-            menuCheckBox0.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox0.BackColor = System.Drawing.Color.Transparent;
             menuCheckBox0.Parent = pictureBox1;
 
-            menuCheckBox1.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox1.BackColor = System.Drawing.Color.Transparent;
             menuCheckBox1.Parent = pictureBox1;
 
-            menuCheckBox2.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox2.BackColor = System.Drawing.Color.Transparent;
             menuCheckBox2.Parent = pictureBox1;
 
-            menuCheckBox3.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox3.BackColor = System.Drawing.Color.Transparent;
             menuCheckBox3.Parent = pictureBox1;
 
-            menuCheckBox4.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox4.BackColor = System.Drawing.Color.Transparent;
             menuCheckBox4.Parent = pictureBox1;
 
-            menuCheckBox5.BackColor= System.Drawing.Color.Transparent; 
+            menuCheckBox5.BackColor = System.Drawing.Color.Transparent;
             menuCheckBox5.Parent = pictureBox1;
 
-            menuCheckBox6.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox6.BackColor = System.Drawing.Color.Transparent;
             menuCheckBox6.Parent = pictureBox1;
 
-            menuCheckBox7.BackColor= System.Drawing.Color.Transparent;
+            menuCheckBox7.BackColor = System.Drawing.Color.Transparent;
             menuCheckBox7.Parent = pictureBox1;
 
-            label2.BackColor= System.Drawing.Color.Transparent;
+            label2.BackColor = System.Drawing.Color.Transparent;
             label2.Parent = pictureBox1;
 
-            totalLabel.BackColor= System.Drawing.Color.Transparent;
+            totalLabel.BackColor = System.Drawing.Color.Transparent;
             totalLabel.Parent = pictureBox1;
         }
 
+        /// <summary>
+        /// Seteaza cantitatea initiala de produse ca fiind 0.
+        /// </summary>
         private void InitCantitate()
         {
             _cantitateProduse = new double[8];
@@ -103,14 +106,23 @@ namespace Interfata
                 _cantitateProduse[i] = 0;
             }
         }
+
+        /// <summary>
+        /// Permite utilizatorului sa paraseasca aplicatia.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void exitButton_Click(object sender, EventArgs e)
         {
             DialogResult iExit;
-            iExit = MessageBox.Show("Sigur vrei sa iesi?", "Glovo",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            iExit = MessageBox.Show("Sigur vrei sa iesi?", "Glovo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (iExit == DialogResult.Yes)
                 Application.Exit();
         }
 
+        /// <summary>
+        /// Goleste casutele de text.
+        /// </summary>
         private void resetTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -125,6 +137,9 @@ namespace Interfata
             func(Controls);
         }
 
+        /// <summary>
+        /// Reseteaza check box-urile.
+        /// </summary>
         private void resetCheckBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -132,13 +147,16 @@ namespace Interfata
             {
                 foreach (Control control in controls)
                     if (control is CheckBox)
-                        (control as CheckBox).Checked=false;
+                        (control as CheckBox).Checked = false;
                     else
                         func(control.Controls);
             };
             func(Controls);
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca text in text box.
+        /// </summary>
         private void EnableTextBoxes()
         {
             Action<Control.ControlCollection> func = null;
@@ -154,16 +172,25 @@ namespace Interfata
         }
 
 
-
+        /// <summary>
+        /// Apeleaza functiile de resetare text box si check box pentru a reinitializa valorile date de utilizator.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void resetButton_Click(object sender, EventArgs e)
         {
             resetTextBoxes();
             resetCheckBoxes();
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cartofiPaiCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-           
+
             if (menuCheckBox4.Checked == true)
             {
                 menuTextBox4.Enabled = true;
@@ -179,6 +206,11 @@ namespace Interfata
 
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void chifteleVegCheckBox_CheckedChanged(object sender, EventArgs e)
         {
 
@@ -195,16 +227,11 @@ namespace Interfata
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pasteCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menuCheckBox0.Checked == true)
@@ -220,6 +247,11 @@ namespace Interfata
             }
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ciuperciCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menuCheckBox1.Checked == true)
@@ -235,6 +267,11 @@ namespace Interfata
             }
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void mamaligaCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menuCheckBox2.Checked == true)
@@ -250,6 +287,11 @@ namespace Interfata
             }
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void sarmaleCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menuCheckBox3.Checked == true)
@@ -265,6 +307,11 @@ namespace Interfata
             }
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ciorbaCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menuCheckBox6.Checked == true)
@@ -281,6 +328,11 @@ namespace Interfata
 
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void gulasCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (menuCheckBox7.Checked)
@@ -297,8 +349,14 @@ namespace Interfata
 
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa introduca valori in text box atunci cand check box-ul aferent este bifat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void totalButton_Click(object sender, EventArgs e)
-        { try
+        {
+            try
             {
                 double[] pretProdus = new double[8];
                 pretProdus[0] = Convert.ToDouble(menuTextBox4.Text) * _preturi[0];
@@ -315,18 +373,22 @@ namespace Interfata
                 {
                     total += pretProdus[i];
                 }
-                totalTextBox.Text = total.ToString()+" lei";
+                totalTextBox.Text = total.ToString() + " lei";
 
             }
-            catch(FormatException ex)
+            catch (FormatException ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 totalTextBox.Text = "ERR";
             }
-            
 
         }
 
+        /// <summary>
+        /// Afiseaza in rich text box preturile pentru produsele din meniul corespunzator localului.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void preturiRichTextBox_TextChanged(object sender, EventArgs e)
         {
             preturiRichTextBox.Text = "";
@@ -341,23 +403,18 @@ namespace Interfata
                 _meniu[6]+"\t\t"+_preturi[6].ToString()+" lei",
                 _meniu[7]+"\t\t"+_preturi[7].ToString()+" lei"
             };
-            foreach(string txt in text)
+            foreach (string txt in text)
             {
                 preturiRichTextBox.Text += txt;
                 preturiRichTextBox.AppendText("\x0A");
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+        /// <summary>
+        /// Permite utilizatorului sa revina la fereastra Magazine.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void RestaurantButton_Click(object sender, EventArgs e)
         {
             Hide();
@@ -365,18 +422,18 @@ namespace Interfata
             form.Show();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Verifica daca a fost selectat macar un produs si introdusa cantitatea acestuia pentru a converti string-ul in double, apoi redirectioneaza utilizatorul catre pagina Bon de Ordin.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PlaseazaComandaButton_Click(object sender, EventArgs e)
         {
             try
             {
                 if (totalTextBox.Text == "ERR" || totalTextBox.Text == "" || totalTextBox.Text == "0")
                     throw new Exception();
-             
+
                 if (menuCheckBox0.Checked) _cantitateProduse[0] = Convert.ToDouble(menuTextBox0.Text);
                 if (menuCheckBox1.Checked) _cantitateProduse[1] = Convert.ToDouble(menuTextBox1.Text);
                 if (menuCheckBox2.Checked) _cantitateProduse[2] = Convert.ToDouble(menuTextBox2.Text);
@@ -398,9 +455,5 @@ namespace Interfata
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

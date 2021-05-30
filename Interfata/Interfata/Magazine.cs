@@ -36,51 +36,56 @@ namespace Interfata
             label1.BackColor = System.Drawing.Color.Transparent;
             label1.Parent = pictureBox1;
 
-            RestaurantRadio.BackColor= System.Drawing.Color.Transparent;
+            RestaurantRadio.BackColor = System.Drawing.Color.Transparent;
             RestaurantRadio.Parent = pictureBox1;
 
-            FastFoodRadio.BackColor= System.Drawing.Color.Transparent;
+            FastFoodRadio.BackColor = System.Drawing.Color.Transparent;
             FastFoodRadio.Parent = pictureBox1;
 
 
         }
 
-            private void label1_Click(object sender, EventArgs e)
-            {
-
-            }
-
-
-            private void magazineComboBox_SelectedIndexChanged(object sender, EventArgs e)
-            {
-
-               
-            }
-
+        /// <summary>
+        /// Delogheaza utilizatorul si il redirectioneaza catre fereastra de Log In.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button2_Click(object sender, EventArgs e)
         {
-            try{
+            try
+            {
 
                 Hide();
                 LogIn form = new LogIn();
                 form.Show();
-            }catch(Exception err)
+            }
+            catch (Exception err)
             {
                 Console.WriteLine("{0} Exception caught.", err);
             }
 
         }
 
-            private void button1_Click(object sender, EventArgs e)
-            {
+        /// <summary>
+        /// Permite utilizatorului sa paraseasca aplicatia.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void button1_Click(object sender, EventArgs e)
+        {
             DialogResult iExit;
             iExit = MessageBox.Show("Sigur vrei sa iesi?", "Glovo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (iExit == DialogResult.Yes)
                 Application.Exit();
         }
 
-            private void veziMeniuButton_Click(object sender, EventArgs e)
-            {
+        /// <summary>
+        /// Redirectioneaza utilizatorul catre fereastra care contine meniul corespunzator localului selectat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void veziMeniuButton_Click(object sender, EventArgs e)
+        {
             try
             {
                 if (magazineComboBox.Enabled)
@@ -110,26 +115,26 @@ namespace Interfata
                             break;
                         default:
                             throw new Exception();
-    
+
 
 
                     }
-                   else if(magazineComboBox2.Enabled)
+                else if (magazineComboBox2.Enabled)
+                {
+                    switch (magazineComboBox2.SelectedItem)
                     {
-                        switch (magazineComboBox2.SelectedItem)
-                        {
-                            case "McDonalds":
+                        case "McDonalds":
 
-                                _local = _fastFact.MakeFastFood(FastFoodType.MCDONALDS);
-                                break;
-                            case "KFC":
-                                _local = _fastFact.MakeFastFood(FastFoodType.KFC);
-                                break;
+                            _local = _fastFact.MakeFastFood(FastFoodType.MCDONALDS);
+                            break;
+                        case "KFC":
+                            _local = _fastFact.MakeFastFood(FastFoodType.KFC);
+                            break;
 
-                            default:
+                        default:
                             throw new Exception();
                     }
-                     }
+                }
                 if (!FastFoodRadio.Checked && !RestaurantRadio.Checked)
                     throw new ApplicationException();
 
@@ -145,7 +150,7 @@ namespace Interfata
                 }
             }
 
-            catch(ApplicationException ex)
+            catch (ApplicationException ex)
             {
                 Console.WriteLine("{0} Exception caught.", ex);
                 MessageBox.Show("NU AI BIFAT CASUTA!!");
@@ -159,13 +164,12 @@ namespace Interfata
             }
         }
 
-            private void label1_Click_1(object sender, EventArgs e)
-            {
 
-            }
-
-
-
+        /// <summary>
+        /// Afiseaza combo box-ul destinat tipului de local selectat de catre utilizator.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectLocal_Click(object sender, EventArgs e)
         {
             try
@@ -200,10 +204,6 @@ namespace Interfata
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

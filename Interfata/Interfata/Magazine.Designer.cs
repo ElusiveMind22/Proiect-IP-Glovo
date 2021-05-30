@@ -79,7 +79,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // magazineComboBox
             // 
@@ -99,7 +98,6 @@
             this.magazineComboBox.Size = new System.Drawing.Size(296, 37);
             this.magazineComboBox.TabIndex = 24;
             this.magazineComboBox.Text = "Alege un magazin...";
-            this.magazineComboBox.SelectedIndexChanged += new System.EventHandler(this.magazineComboBox_SelectedIndexChanged);
             // 
             // button1
             // 

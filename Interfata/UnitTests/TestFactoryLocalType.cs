@@ -7,6 +7,9 @@ namespace UnitTests
     [TestClass]
     public class TestFactoryLocalType
     {
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeKFC()
         {
@@ -16,9 +19,13 @@ namespace UnitTests
             local = fastFoodMaker.MakeFastFood(FastFoodType.KFC);
 
             //Assert
-            Assert.AreEqual("FastFood",local.TipDeLocal);
+            Assert.AreEqual("FastFood", local.TipDeLocal);
 
         }
+
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeMcDonalds()
         {
@@ -31,6 +38,10 @@ namespace UnitTests
             Assert.AreEqual("FastFood", local.TipDeLocal);
 
         }
+
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeCartuf()
         {
@@ -43,6 +54,10 @@ namespace UnitTests
             Assert.AreEqual("Restaurant", local.TipDeLocal);
 
         }
+
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeDelicio()
         {
@@ -55,6 +70,10 @@ namespace UnitTests
             Assert.AreEqual("Restaurant", local.TipDeLocal);
 
         }
+
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeLaCuib()
         {
@@ -67,6 +86,10 @@ namespace UnitTests
             Assert.AreEqual("Restaurant", local.TipDeLocal);
 
         }
+
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeMammaMia()
         {
@@ -79,6 +102,10 @@ namespace UnitTests
             Assert.AreEqual("Restaurant", local.TipDeLocal);
 
         }
+
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeNoodlePack()
         {
@@ -91,6 +118,10 @@ namespace UnitTests
             Assert.AreEqual("Restaurant", local.TipDeLocal);
 
         }
+
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeOxford()
         {
@@ -102,6 +133,10 @@ namespace UnitTests
             //Assert
             Assert.AreEqual("Restaurant", local.TipDeLocal);
         }
+
+        /// <summary>
+        /// Verifica daca localul selectat coincide cu tipul localului selectat.
+        /// </summary>
         [TestMethod]
         public void TypeSplendeat()
         {
@@ -114,6 +149,6 @@ namespace UnitTests
             Assert.AreEqual("Restaurant", local.TipDeLocal);
 
         }
-        
+
     }
 }

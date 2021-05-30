@@ -102,3 +102,21 @@ C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\Interfata\Interfata\
 C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\Interfata\Interfata\bin\Debug\Interfata.pdb
 C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\Interfata\Interfata\obj\Debug\Interfata.csproj.CopyComplete
 C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\Interfata\Interfata\bin\Debug\LocaluriLibrary.dll
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.csprojAssemblyReference.cache
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.BonDeOrdin.resources
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Forgotten_password.resources
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.LogIn.resources
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Magazine.resources
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Main.resources
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Menu.resources
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Properties.Resources.resources
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.Sign_up.resources
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.csproj.GenerateResource.cache
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.csproj.CoreCompileInputs.cache
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.exe
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.pdb
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\bin\Debug\Interfata.exe.config
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\bin\Debug\Interfata.exe
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\bin\Debug\Interfata.pdb
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\bin\Debug\LocaluriLibrary.dll
+D:\Facultate\Anul3\Semestrul 2\IP\Proiect\Proiect 6A 2021\Proiect-IP-Glovo\Interfata\Interfata\obj\Debug\Interfata.csproj.CopyComplete

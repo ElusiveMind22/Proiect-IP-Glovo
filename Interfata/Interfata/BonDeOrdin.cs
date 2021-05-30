@@ -37,7 +37,7 @@ namespace Interfata
             _cantitateProduse = cantitateProduse;
 
             InitializeComponent();
-            dateTimePicker1.MinDate = dateTimePicker2.MinDate = dateTimePicker3.MinDate = dateTimePicker4.MinDate=DateTime.Now;
+            dateTimePicker1.MinDate = dateTimePicker2.MinDate = dateTimePicker3.MinDate = dateTimePicker4.MinDate = DateTime.Now;
             dateTimePicker1.Format = DateTimePickerFormat.Custom;
             dateTimePicker1.CustomFormat = "hh:mm:ss";
             dateTimePicker2.Value = dateTimePicker2.Value.AddMinutes(30);
@@ -47,7 +47,7 @@ namespace Interfata
             label4.BackColor = System.Drawing.Color.Transparent;
             label4.Parent = pictureBox1;
 
-            label5.BackColor= System.Drawing.Color.Transparent;
+            label5.BackColor = System.Drawing.Color.Transparent;
             label5.Parent = pictureBox1;
 
             label1.BackColor = System.Drawing.Color.Transparent;
@@ -63,12 +63,23 @@ namespace Interfata
             dateTimePicker1.Enabled = false;
             textBox_nrcomanda.Enabled = false;
         }
-       
+
+        /// <summary>
+        /// Genereaza un numar la intamplare care reprezinta numarul de ordin.
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
         public int RandomNumber(int min, int max)
         {
             return _random.Next(min, max);
         }
 
+        /// <summary>
+        /// Daca utilizatorul accepta, i se genereaza un bon pentru produsele achizitionate.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_genereaza_Click(object sender, EventArgs e)
         {
             try
@@ -101,12 +112,12 @@ namespace Interfata
                         {
                             if (!(_cantitateProduse[i] == 0))
                             {
-                                b.Graphics.DrawString(_meniuri[i]+"\t:\t"+_cantitateProduse[i]+"bucăți\t : \t"+_preturi[i]+" lei bucata", drawFont1, Brushes.Black, 150, val);
+                                b.Graphics.DrawString(_meniuri[i] + "\t:\t" + _cantitateProduse[i] + "bucăți\t : \t" + _preturi[i] + " lei bucata", drawFont1, Brushes.Black, 150, val);
                                 val += 50;
                             }
 
                         }
-                        b.Graphics.DrawString("Total: "+_total, drawFont1, Brushes.Black, 150, val);
+                        b.Graphics.DrawString("Total: " + _total, drawFont1, Brushes.Black, 150, val);
 
                     };
                     p.ShowDialog();
@@ -120,10 +131,13 @@ namespace Interfata
             }
         }
 
-
+        /// <summary>
+        /// Trimite comanda si redirectioneaza utilizatorul catre fereastra de Log In.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_genereaza_comanda_Click(object sender, EventArgs e)
         {
-
 
             Hide();
             LogIn form = new LogIn();

@@ -17,11 +17,13 @@ namespace Interfata
         {
             InitializeComponent();
             parolaLogInTextBox.PasswordChar = '•';
-            //fcaem label-uri transparente
+
+            // Facem label-uri transparente
+
             logInLabel.BackColor = System.Drawing.Color.Transparent;
             logInLabel.Parent = pictureBox1;
 
-            usernameLogInLabel.BackColor=System.Drawing.Color.Transparent;
+            usernameLogInLabel.BackColor = System.Drawing.Color.Transparent;
             usernameLogInLabel.Parent = pictureBox1;
 
 
@@ -37,37 +39,13 @@ namespace Interfata
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            try
-            {
 
-                SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;"); ;
-                SqlDataAdapter sql = new SqlDataAdapter();
-                SqlCommand cmd = new SqlCommand();
-                conn.Open();
-                string login = "SELECT * FROM [Table] WHERE USERNAME='" + usernameLogInTextBox.Text + "' and PASSWORD='" + parolaLogInTextBox.Text + "'";
-                cmd = new SqlCommand(login, conn);
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read() == true)
-                {
-                    new Magazine().Show();
-                    Hide();
-                }     
-                else
-                {
-                    MessageBox.Show("Utilizator sau parola date invalide", "Autentificare esuata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    usernameLogInTextBox.Text = "";
-                    parolaLogInTextBox.Text = "";
-                    usernameLogInTextBox.Focus();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
 
+        /// <summary>
+        /// Autentifica utilizatorul cu un cont deja inregistrat in baza de date si il redirectioneaza spre fereastra de alegere a tipului de local.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void logInButton_Click(object sender, EventArgs e)
         {
             if (rememberMeCheckBox.Checked)
@@ -110,14 +88,23 @@ namespace Interfata
             }
         }
 
+        /// <summary>
+        /// Salveaza in setarile programului datele de autentificare
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LogIn_Load(object sender, EventArgs e)
         {
 
-                usernameLogInTextBox.Text = Properties.Settings.Default.UserName;
-                parolaLogInTextBox.Text = Properties.Settings.Default.Password;
+            usernameLogInTextBox.Text = Properties.Settings.Default.UserName;
+            parolaLogInTextBox.Text = Properties.Settings.Default.Password;
 
         }
-
+        /// <summary>
+        /// Inchide fereastra actuala si redirectioneaza utilizatorul la fereastra principala.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
@@ -125,6 +112,11 @@ namespace Interfata
             form.Show();
         }
 
+        /// <summary>
+        /// Redirectioneaza utilizatorul spre o fereastra in care isi poate modifica parola contului.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void parolaUitataButton_Click(object sender, EventArgs e)
         {
             Hide();
@@ -132,6 +124,11 @@ namespace Interfata
             form.Show();
         }
 
+        /// <summary>
+        /// Face parola vizibila pentru utilizator.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void checkBox_afiseaza_parola_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox_afiseaza_parola.Checked)
@@ -146,11 +143,17 @@ namespace Interfata
             }
         }
 
+        /// <summary>
+        /// Goleste casutele de text Parola si Username.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ResetButton_Click(object sender, EventArgs e)
         {
             usernameLogInTextBox.Text = "";
             parolaLogInTextBox.Text = "";
             usernameLogInTextBox.Focus();
         }
+
     }
 }

@@ -37,10 +37,10 @@ namespace Interfata
             checkBox_afiseaza_parola.BackColor = System.Drawing.Color.Transparent;
             checkBox_afiseaza_parola.Parent = pictureBox1;
 
-            gdprCheckBox.BackColor= System.Drawing.Color.Transparent;
+            gdprCheckBox.BackColor = System.Drawing.Color.Transparent;
             gdprCheckBox.Parent = pictureBox1;
 
-            newsletterCheckBox.BackColor= System.Drawing.Color.Transparent;
+            newsletterCheckBox.BackColor = System.Drawing.Color.Transparent;
             newsletterCheckBox.Parent = pictureBox1;
         }
 
@@ -49,6 +49,12 @@ namespace Interfata
 
         }
 
+
+        /// <summary>
+        /// Redirectioneaza utilizatorul catre fereastra principala.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButton_Click(object sender, EventArgs e)
         {
             Hide();
@@ -56,10 +62,15 @@ namespace Interfata
             form.Show();
         }
 
+        /// <summary>
+        /// Verifica daca datele introduse de utilizator exista deja in baza de date si daca nu, sunt adaugate.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void signUpButton_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;");
-            conn.Open();                            
+            conn.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             //Daca exista deja utilizator cu numele asta sau cu mailul asta e nono.
@@ -67,7 +78,7 @@ namespace Interfata
             SqlDataAdapter sql = new SqlDataAdapter("Select Count(*) From [Table] Where Username='" + usernameSignUpTextBox.Text + "' or mail='" + emailSignUpTextBox.Text + "'", conn);
             DataTable dta = new DataTable();
             sql.Fill(dta);
-            if (usernameSignUpTextBox.Text == "" || parolaSignUpTextBox.Text == "" || parolaConfirmSignUpTextBox.Text == "" || emailSignUpTextBox.Text=="")
+            if (usernameSignUpTextBox.Text == "" || parolaSignUpTextBox.Text == "" || parolaConfirmSignUpTextBox.Text == "" || emailSignUpTextBox.Text == "")
             {
                 MessageBox.Show("Campurile Utilizator, Email sau Parola sunt goale", "Inregistrare esuata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -78,7 +89,7 @@ namespace Interfata
                 MessageBox.Show("Trebuie sa fiti de acord cu GDPR!");
             }
             else
-            if(parolaConfirmSignUpTextBox.Text!=parolaSignUpTextBox.Text)
+            if (parolaConfirmSignUpTextBox.Text != parolaSignUpTextBox.Text)
             {
                 MessageBox.Show("Parola nu corespunde!", "Inregistrare esuata!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -114,30 +125,13 @@ namespace Interfata
                 parolaSignUpTextBox.Focus();
             }
 
-
-
         }
 
-        private void parolaSignUpTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void emailSignUpTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usernameSignUpTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gdprCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Permite utilizatorului sa vizualizeze parola introdusa
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void checkBox_afiseaza_parola_CheckedChanged(object sender, EventArgs e)
         {
             {
@@ -154,16 +148,11 @@ namespace Interfata
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void signUpLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Sterge textul din casutele de text.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_Stergere_Click(object sender, EventArgs e)
         {
             usernameSignUpTextBox.Text = "";
@@ -172,9 +161,5 @@ namespace Interfata
             emailSignUpTextBox.Focus();
         }
 
-        private void usernameSignUpLabel_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

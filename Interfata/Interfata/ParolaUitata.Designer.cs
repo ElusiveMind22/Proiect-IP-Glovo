@@ -50,7 +50,6 @@ namespace Interfata
             this.EmailTextBox.Name = "EmailTextBox";
             this.EmailTextBox.Size = new System.Drawing.Size(244, 34);
             this.EmailTextBox.TabIndex = 0;
-            this.EmailTextBox.TextChanged += new System.EventHandler(this.EmailTextBox_TextChanged);
             // 
             // HelpLabel
             // 
@@ -61,7 +60,6 @@ namespace Interfata
             this.HelpLabel.Size = new System.Drawing.Size(85, 29);
             this.HelpLabel.TabIndex = 1;
             this.HelpLabel.Text = "label1";
-            this.HelpLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // NextButton
             // 
@@ -129,7 +127,6 @@ namespace Interfata
             this.label1.Size = new System.Drawing.Size(428, 91);
             this.label1.TabIndex = 6;
             this.label1.Text = "Reseteaza";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // pictureBox1
             // 
@@ -140,7 +137,6 @@ namespace Interfata
             this.pictureBox1.Size = new System.Drawing.Size(835, 1024);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
@@ -152,8 +148,6 @@ namespace Interfata
             this.label2.Size = new System.Drawing.Size(288, 91);
             this.label2.TabIndex = 8;
             this.label2.Text = "parola!";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
             // Forgotten_password
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -171,7 +165,6 @@ namespace Interfata
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Forgotten_password";
             this.Text = "Forgotten_password";
-            this.Load += new System.EventHandler(this.Forgotten_password_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

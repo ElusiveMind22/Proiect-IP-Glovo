@@ -71,7 +71,6 @@
             this.gdprCheckBox.TabIndex = 14;
             this.gdprCheckBox.Text = "Sunt de acord cu GDPR";
             this.gdprCheckBox.UseVisualStyleBackColor = true;
-            this.gdprCheckBox.CheckedChanged += new System.EventHandler(this.gdprCheckBox_CheckedChanged);
             // 
             // parolaSignUpTextBox
             // 
@@ -81,7 +80,6 @@
             this.parolaSignUpTextBox.Name = "parolaSignUpTextBox";
             this.parolaSignUpTextBox.Size = new System.Drawing.Size(209, 29);
             this.parolaSignUpTextBox.TabIndex = 13;
-            this.parolaSignUpTextBox.TextChanged += new System.EventHandler(this.parolaSignUpTextBox_TextChanged);
             // 
             // emailSignUpTextBox
             // 
@@ -91,7 +89,6 @@
             this.emailSignUpTextBox.Name = "emailSignUpTextBox";
             this.emailSignUpTextBox.Size = new System.Drawing.Size(209, 29);
             this.emailSignUpTextBox.TabIndex = 12;
-            this.emailSignUpTextBox.TextChanged += new System.EventHandler(this.emailSignUpTextBox_TextChanged);
             // 
             // usernameSignUpTextBox
             // 
@@ -101,7 +98,6 @@
             this.usernameSignUpTextBox.Name = "usernameSignUpTextBox";
             this.usernameSignUpTextBox.Size = new System.Drawing.Size(209, 29);
             this.usernameSignUpTextBox.TabIndex = 11;
-            this.usernameSignUpTextBox.TextChanged += new System.EventHandler(this.usernameSignUpTextBox_TextChanged);
             // 
             // parolaSignUpLabel
             // 
@@ -135,7 +131,6 @@
             this.usernameSignUpLabel.Size = new System.Drawing.Size(111, 26);
             this.usernameSignUpLabel.TabIndex = 8;
             this.usernameSignUpLabel.Text = "Username:";
-            this.usernameSignUpLabel.Click += new System.EventHandler(this.usernameSignUpLabel_Click);
             // 
             // newsletterCheckBox
             // 
@@ -169,7 +164,6 @@
             this.signUpLabel.Size = new System.Drawing.Size(506, 131);
             this.signUpLabel.TabIndex = 18;
             this.signUpLabel.Text = "SIGN  UP!";
-            this.signUpLabel.Click += new System.EventHandler(this.signUpLabel_Click);
             // 
             // BackButton
             // 
@@ -218,7 +212,6 @@
             this.label1.Size = new System.Drawing.Size(166, 26);
             this.label1.TabIndex = 24;
             this.label1.Text = "Confirma Parola:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button_Stergere
             // 

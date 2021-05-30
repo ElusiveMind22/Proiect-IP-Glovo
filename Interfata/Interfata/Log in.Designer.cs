@@ -73,7 +73,7 @@
             this.usernameLogInTextBox.Name = "usernameLogInTextBox";
             this.usernameLogInTextBox.Size = new System.Drawing.Size(209, 29);
             this.usernameLogInTextBox.TabIndex = 3;
-           // 
+            // 
             // parolaLogInTextBox
             // 
             this.parolaLogInTextBox.Font = new System.Drawing.Font("Open Sans SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -81,7 +81,8 @@
             this.parolaLogInTextBox.Name = "parolaLogInTextBox";
             this.parolaLogInTextBox.Size = new System.Drawing.Size(209, 29);
             this.parolaLogInTextBox.TabIndex = 5;
-           // rememberMeCheckBox
+            // 
+            // rememberMeCheckBox
             // 
             this.rememberMeCheckBox.AutoSize = true;
             this.rememberMeCheckBox.Font = new System.Drawing.Font("Open Sans SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -92,7 +93,7 @@
             this.rememberMeCheckBox.TabIndex = 6;
             this.rememberMeCheckBox.Text = "Tine-ma minte";
             this.rememberMeCheckBox.UseVisualStyleBackColor = true;
-           // 
+            // 
             // logInButton
             // 
             this.logInButton.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -136,7 +137,6 @@
             this.logInLabel.Size = new System.Drawing.Size(352, 131);
             this.logInLabel.TabIndex = 10;
             this.logInLabel.Text = "Log In";
-            this.logInLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // BackButton
             // 

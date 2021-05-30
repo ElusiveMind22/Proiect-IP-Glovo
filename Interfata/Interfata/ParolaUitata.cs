@@ -16,10 +16,19 @@ namespace Interfata
         private readonly Random _random = new Random();
         private int _codAutentificare;
         private string _userEmail;
+
+        /// <summary>
+        /// Genereaza un cod aleatoriu necesar pentru modificarea parolei utilizatorului.
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
         public int RandomNumber(int min, int max)
         {
             return _random.Next(min, max);
         }
+
+
         public Forgotten_password()
         {
             InitializeComponent();
@@ -42,16 +51,11 @@ namespace Interfata
 
         }
 
-        private void Forgotten_password_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
+        /// <summary>
+        /// Verifica daca email-ul tastat de utilizator se afla in baza de date si daca da, afiseaza codul pentru modificarea parolei.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\Interfata\Interfata\DataBase.mdf;Integrated Security=True;Connect Timeout=30;");
@@ -64,10 +68,10 @@ namespace Interfata
             if (dta.Rows[0][0].ToString() == "1")
             {
 
-                _userEmail= EmailTextBox.Text;
+                _userEmail = EmailTextBox.Text;
                 _codAutentificare = RandomNumber(1000, 9999);
                 HelpLabel.Text = "Inserati codul primit pe mail pentru a va schimba parola!";
-                MessageBox.Show("Codul dumneavoastra este: " + _codAutentificare+"!");
+                MessageBox.Show("Codul dumneavoastra este: " + _codAutentificare + "!");
                 NextButton.Hide();
                 NextButton2.Show();
                 EmailTextBox.Text = "";
@@ -78,6 +82,11 @@ namespace Interfata
             }
         }
 
+        /// <summary>
+        /// Redirectioneaza utilizatorul catre pagina de Log In.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BackButton_Click(object sender, EventArgs e)
         {
             Hide();
@@ -85,9 +94,14 @@ namespace Interfata
             form.Show();
         }
 
+        /// <summary>
+        /// Compara codul introdus de utilizator cu cel generat.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton2_Click(object sender, EventArgs e)
         {
-            if(Convert.ToInt32(EmailTextBox.Text)==_codAutentificare)
+            if (Convert.ToInt32(EmailTextBox.Text) == _codAutentificare)
             {
                 NextButton2.Hide();
                 NextButton3.Show();
@@ -96,11 +110,16 @@ namespace Interfata
             }
             else
             {
-                MessageBox.Show("Cod Incorect! Mai incearca!"); 
+                MessageBox.Show("Cod Incorect! Mai incearca!");
             }
 
         }
 
+        /// <summary>
+        /// Modifica parola utilizatorului din baza de date.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void NextButton3_Click(object sender, EventArgs e)
         {
 
@@ -108,36 +127,16 @@ namespace Interfata
             conn.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
-            cmd.CommandText = "update [table] set password=@password where mail='"+_userEmail+"'";
+            cmd.CommandText = "update [table] set password=@password where mail='" + _userEmail + "'";
             cmd.Parameters.AddWithValue("@password", EmailTextBox.Text);
 
-                if (cmd.ExecuteNonQuery() > 0)
-                {
-                    MessageBox.Show("Parola schimbata cu succes!");
-                    Hide();
-                    LogIn form = new LogIn();
-                    form.Show();
+            if (cmd.ExecuteNonQuery() > 0)
+            {
+                MessageBox.Show("Parola schimbata cu succes!");
+                Hide();
+                LogIn form = new LogIn();
+                form.Show();
             }
-
-        }
-
-        private void EmailTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
     }

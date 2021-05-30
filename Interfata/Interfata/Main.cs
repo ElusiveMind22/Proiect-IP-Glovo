@@ -23,6 +23,11 @@ namespace Interfata
 
         }
 
+        /// <summary>
+        /// Permite utilizatorului sa paraseasca aplicatia.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExitButton_Click(object sender, EventArgs e)
         {
 
@@ -32,6 +37,11 @@ namespace Interfata
                 Application.Exit();
         }
 
+        /// <summary>
+        /// Redirectioneaza utilizatorul catre pagina de Log In.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LogInButton_Click(object sender, EventArgs e)
         {
             Hide();
@@ -39,6 +49,11 @@ namespace Interfata
             form.Show();
         }
 
+        /// <summary>
+        /// Redirectioneaza utilizatorul catre pagina de Sign Up.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SignUpButton_Click(object sender, EventArgs e)
         {
             Hide();

@@ -7,6 +7,9 @@ namespace UnitTests
     [TestClass]
     public class TestFactoryLocalCreate
     {
+        /// <summary>
+        /// 
+        /// </summary>
         [TestMethod]
         public void FastFoodMakeRestaurant()
         {
@@ -222,6 +225,6 @@ namespace UnitTests
             Assert.IsNotNull(local);
 
         }
-        
+
     }
 }
