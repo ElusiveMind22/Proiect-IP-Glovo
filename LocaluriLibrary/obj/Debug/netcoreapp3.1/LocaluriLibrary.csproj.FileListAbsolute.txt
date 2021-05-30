@@ -16,3 +16,12 @@ C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\
 C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.csproj.CoreCompileInputs.cache
 C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.dll
 C:\Users\vicev\Downloads\Interfata apropae frumix\ProiectIP\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.pdb
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.deps.json
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.dll
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\bin\Debug\netcoreapp3.1\LocaluriLibrary.pdb
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.csprojAssemblyReference.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.AssemblyInfoInputs.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.AssemblyInfo.cs
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.csproj.CoreCompileInputs.cache
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.dll
+C:\Users\vicev\OneDrive\Documents\GitHub\Proiect-IP-Glovo\LocaluriLibrary\obj\Debug\netcoreapp3.1\LocaluriLibrary.pdb

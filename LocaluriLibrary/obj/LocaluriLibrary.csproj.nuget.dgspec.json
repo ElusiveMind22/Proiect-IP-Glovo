@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\LocaluriLibrary\\LocaluriLibrary.csproj": {}
+    "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\LocaluriLibrary\\LocaluriLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\LocaluriLibrary\\LocaluriLibrary.csproj": {
+    "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\LocaluriLibrary\\LocaluriLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\LocaluriLibrary\\LocaluriLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\LocaluriLibrary\\LocaluriLibrary.csproj",
         "projectName": "LocaluriLibrary",
-        "projectPath": "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\LocaluriLibrary\\LocaluriLibrary.csproj",
+        "projectPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\LocaluriLibrary\\LocaluriLibrary.csproj",
         "packagesPath": "C:\\Users\\vicev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\LocaluriLibrary\\obj\\",
+        "outputPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\LocaluriLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

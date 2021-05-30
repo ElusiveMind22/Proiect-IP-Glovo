@@ -7,11 +7,21 @@ using System.Threading.Tasks;
 
 namespace LocaluriLibrary.Localuri.Restaurante
 {
+    /// <summary>
+    /// Clasa ce mosteneste clasa abstracta MagazineRestaurant.
+    /// </summary>
 
     public class LaCuib : MagazineRestaurante
     {
+
+        /// <summary>
+        /// Constructor ce atribuie valorile specifice restaurantului.
+        /// </summary>
         public LaCuib() : base()
         {
+
+            //Atribuire Variabile
+
             _meniu = new string[8];
             _meniu[0] = "Meniul zilei";
             _meniu[1] = "Salata";
@@ -33,6 +43,8 @@ namespace LocaluriLibrary.Localuri.Restaurante
             _preturi[7] = 10;
 
             _numeleDeLocal = "LaCuib";
+
+            // Gettere - Settere.
 
             Meniu = _meniu;
             Preturi = _preturi;

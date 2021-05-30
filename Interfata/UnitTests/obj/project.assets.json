@@ -5738,11 +5738,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\Interfata\\UnitTests\\UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj",
       "projectName": "UnitTests",
-      "projectPath": "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\Interfata\\UnitTests\\UnitTests.csproj",
+      "projectPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj",
       "packagesPath": "C:\\Users\\vicev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\Interfata\\UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5763,8 +5763,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\Interfata\\Interfata\\Interfata.csproj": {
-              "projectPath": "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\Interfata\\Interfata\\Interfata.csproj"
+            "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj": {
+              "projectPath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\Interfata\\Interfata.csproj"
             }
           }
         }

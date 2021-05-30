@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8r/iPFS/USbT1UrpgRQ2FbPDTZov77jRowdPFxaNZVI/0KxagbvonR+WMUnJaLC1Z8ZRkRfQyGb34T0w2cQcJA==",
+  "dgSpecHash": "O+S1WesMOrJ4rXVnSp34fPH2wBhMG00BdDmGSMyYW5ezfAxh0LmjfMVMLQUG5a1mkoFBkSeJ5+go6i+GQTGAqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vicev\\Downloads\\Interfata apropae frumix\\ProiectIP\\Interfata\\UnitTests\\UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\vicev\\OneDrive\\Documents\\GitHub\\Proiect-IP-Glovo\\Interfata\\UnitTests\\UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vicev\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\vicev\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
